@@ -2,16 +2,71 @@
 <html>
     <head>
         <title>title</title>
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
         <style>
             * {
-                font-family: Comic Sans MS;
+                font-family: "Exo 2";
+                color: white;
+            }
+            h1 {
+                font-size: 4.2em;
+            }
+            #wrapper {
+                margin: 0 auto;
+                text-align: center;
+                width: 50%;
+                /*background-color: #2196F3;*/
+                border-radius: 10px;
+                padding-bottom: 30px;
+                /*box-shadow: 5px 5px 5px #888888;*/
+            }
+            #nav {
+                border-radius: 10px;
+                /*box-shadow: 5px 5px 5px #888888;*/
+                /*background-color: #2196F3;*/
+                list-style-type: none;
+                padding: 10px;
+                text-align: right;
+            }
+            #nav li{
+                display: inline;
+                padding-right: 15px;
+            }
+            #nav li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.2em;
+            }
+            #nav li a:hover {
+                color: #2196F3;
+            }
+            #wrapper a {
+                text-decoration: none;
+                font-size: 1.2em;
+            }
+            #wrapper a:hover {
+                color: #2196F3;
+            }
+            body {
+                background-color: #595959; 
+                background-size: 150%;
             }
         </style>
     </head>
     <body>
-        <h1>website</h1>
-        <h2>stuff i worked on</h2>
-        <a href="sound/index.html">soundboard</a><br>
-        <a href="frogger/index.html">i wanna be the frog</a>
+        <nav>
+            <ul id = "nav">
+                <li><a href="sound/index.html">soundboard</a></li>
+                <li><a href="frogger/index.html">i wanna be the frog</a></li>
+            </ul>
+        </nav>
+        <div id = wrapper>
+            <h1>website</h1>
+            <div id = "contact">
+                <a href="http://steamcommunity.com/id/icyarctic/">steam</a> / 
+                <a href="https://myanimelist.net/animelist/arctic5">anime</a> / 
+                <a href="https://osu.ppy.sh/u/2572015">osu!</a>
+            </div>
+        </div>
     </body>
 </html>
