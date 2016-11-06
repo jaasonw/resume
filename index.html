@@ -6,12 +6,16 @@
         <style>
             * {
                 font-family: "Exo 2";
-                color: white;
+                /*color: white;*/
             }
             h1 {
                 font-size: 4.2em;
+                margin-bottom: -1px;
             }
             #wrapper {
+                position: absolute;
+                top: 25%;
+                left: 25%;
                 margin: 0 auto;
                 text-align: center;
                 width: 50%;
@@ -19,6 +23,19 @@
                 border-radius: 10px;
                 padding-bottom: 30px;
                 /*box-shadow: 5px 5px 5px #888888;*/
+                color: #E4E4E6;
+            }
+            #wrapper a {
+                text-decoration: none;
+                color: #545C66;
+                font-size: 1.5em;
+            }
+            #wrapper a, #wrapper p {
+                text-decoration: none;
+                font-size: 1.5em;
+            }
+            #wrapper a:hover {
+                color: #4AA2E9;
             }
             #nav {
                 border-radius: 10px;
@@ -27,28 +44,26 @@
                 list-style-type: none;
                 padding: 10px;
                 text-align: right;
+                font-size: 1.2em;
+            }
+            #nav {
+                color: #E4E4E6;
+                font-size: 1.3em;
             }
             #nav li{
                 display: inline;
                 padding-right: 15px;
+                color: #E4E4E6;
             }
-            #nav li a {
+            #nav a {
                 text-decoration: none;
-                color: white;
-                font-size: 1.5em;
+                color: #E4E4E6;
             }
-            #nav li a:hover {
-                color: #0184B0;
-            }
-            #wrapper a, #wrapper p {
-                text-decoration: none;
-                font-size: 1.5em;
-            }
-            #wrapper a:hover {
-                color: #0184B0;
+            #nav a:hover {
+                color: #4AA2E9;
             }
             body {
-                background-color: #04B4ED; 
+                background-color: #131B1F;
                 background-size: 150%;
             }
         </style>
@@ -56,17 +71,19 @@
     <body>
         <nav>
             <ul id = "nav">
-                <li><a href="sound/index.html">soundboard</a></li>
-                <li><a href="frogger/index.html">i wanna be the frog</a></li>
+                <a href="http://steamcommunity.com/id/icyarctic/">steam</a> / 
+                <a href="https://myanimelist.net/animelist/arctic5">anime</a> / 
+                <a href="https://osu.ppy.sh/u/2572015">osu!</a>
             </ul>
         </nav>
         <div id = wrapper>
             <h1>website</h1>
-            <p>click on these links to see weeb things or donate to me on steam</p>
-            <div id = "contact">
-                <a href="http://steamcommunity.com/id/icyarctic/">steam</a> / 
-                <a href="https://myanimelist.net/animelist/arctic5">anime</a> / 
-                <a href="https://osu.ppy.sh/u/2572015">osu!</a>
+            <p>click on these links to see stuff I worked on or made</p>
+            <div id = "projects">
+                <ul>
+                    <a href="sound/index.html">soundboard</a><br>
+                    <a href="frogger/index.html">i wanna be the frog</a>
+                </ul>
             </div>
         </div>
     </body>
