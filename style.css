@@ -3,10 +3,13 @@
 * {
     font-family: "Quicksand";
 }
-h1 {
+body {
+    background-color: #131B1F;
+}
+#title {
     font-family: "Exo 2";
-    font-size: 4.2em;
-    margin-bottom: -1px;
+    font-size: 4.5em;
+    margin-bottom: 0px;
 }
 #wrapper {
     position: absolute;
@@ -19,16 +22,15 @@ h1 {
     padding-bottom: 30px;
     color: #E4E4E6;
 }
-#wrapper a {
+#projects a {
     text-decoration: none;
-    color: #545C66;
-    font-size: 1.5em;
+    color: #8692A0;
 }
-#wrapper a, #wrapper p {
+#projects a, #projects p {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
-#wrapper a:hover {
+#projects a:hover {
     color: #4AA2E9;
 }
 #nav {
@@ -39,22 +41,13 @@ h1 {
     font-size: 1.2em;
 }
 #nav {
-    color: #E4E4E6;
-    font-size: 1.3em;
-}
-#nav li{
-    display: inline;
-    padding-right: 15px;
-    color: #E4E4E6;
+    color: #8692A0;
+    font-size: 1.5em;
 }
 #nav a {
     text-decoration: none;
-    color: #E4E4E6;
+    color: #8692A0;
 }
 #nav a:hover {
     color: #4AA2E9;
-}
-body {
-    background-color: #131B1F;
-    background-size: 150%;
 }
