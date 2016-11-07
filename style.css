@@ -1,0 +1,62 @@
+* {
+    font-family: "Exo 2";
+    /*color: white;*/
+}
+h1 {
+    font-size: 4.2em;
+    margin-bottom: -1px;
+}
+#wrapper {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    /*background-color: #2196Fs3;*/
+    border-radius: 10px;
+    padding-bottom: 30px;
+    /*box-shadow: 5px 5px 5px #888888;*/
+    color: #E4E4E6;
+}
+#wrapper a {
+    text-decoration: none;
+    color: #545C66;
+    font-size: 1.5em;
+}
+#wrapper a, #wrapper p {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#wrapper a:hover {
+    color: #4AA2E9;
+}
+#nav {
+    border-radius: 10px;
+    /*box-shadow: 5px 5px 5px #888888;*/
+    /*background-color: #2196F3;*/
+    list-style-type: none;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.2em;
+}
+#nav {
+    color: #E4E4E6;
+    font-size: 1.3em;
+}
+#nav li{
+    display: inline;
+    padding-right: 15px;
+    color: #E4E4E6;
+}
+#nav a {
+    text-decoration: none;
+    color: #E4E4E6;
+}
+#nav a:hover {
+    color: #4AA2E9;
+}
+body {
+    background-color: #131B1F;
+    background-size: 150%;
+}
