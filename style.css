@@ -33,21 +33,20 @@ body {
 #projects a:hover {
     color: #4AA2E9;
 }
-#nav {
+nav {
     border-radius: 10px;
     list-style-type: none;
     padding: 10px;
+    padding-top: 25px;
     text-align: right;
     font-size: 1.2em;
-}
-#nav {
     color: #8692A0;
     font-size: 1.5em;
 }
-#nav a {
+nav a {
     text-decoration: none;
     color: #8692A0;
 }
-#nav a:hover {
+nav a:hover {
     color: #4AA2E9;
 }
