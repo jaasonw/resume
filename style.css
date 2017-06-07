@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
 * {
-    font-family: "Quicksand";
+    font-family: "Didact Gothic";
     color: #E4E4E6;
 }
 body {
