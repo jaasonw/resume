@@ -1,26 +1,44 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <title>title</title>
-        <link href="style.css" rel="stylesheet">
+        <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href = "style.css" rel = "stylesheet">
     </head>
     <body>
-        <nav>
-            <a href="https://github.com/jaasonw">github</a> /
-            <a href="http://steamcommunity.com/id/icyarctic/">steam</a> / 
-            <a href="https://myanimelist.net/animelist/arctic5">anime</a> / 
-            <a href="https://osu.ppy.sh/u/2572015">osu!</a>
+        <nav class = "navbar navbar-inverse">
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+            </div>
+            <div class = "collapse navbar-collapse" id = "navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href = "https://github.com/jaasonw">github</a></li>
+                    <li><a href = "http://steamcommunity.com/id/icyarctic/"> steam</a></li>
+                    <li><a href = "https://myanimelist.net/animelist/arctic5"> anime</a></li>
+                    <li><a href = "https://osu.ppy.sh/u/2572015"> osu!</a></li>
+                </ul>
+            </div>
         </nav>
-        <div id = wrapper>
-            <h1 id = "title">¯\_(ツ)_/¯</h1>
-            <div id = "projects">
-                <a href="sound/index.html">soundboard</a><br>
-                <a href="frogger/index.html">i wanna be the frog</a><br>
-                <a href="https://github.com/jaasonw/sushi_shop">sushi_shop</a>
+        <div class = "container-fluid" id = wrapper>
+            <div class="row">
+                <h1 id = "title">¯\_(ツ)_/¯</h1>
+            </div>
+            <div class="row">
+                <div id = "projects">
+                    <a href = "sound/index.html">soundboard</a><br>
+                    <a href = "frogger/index.html">i wanna be the frog</a><br>
+                    <a href = "https://github.com/jaasonw/sushi_shop">sushi_shop</a>
+                </div>
             </div>
         </div>
-        <footer>
-        	copyright stuff here
-        </footer>
     </body>
 </html>
