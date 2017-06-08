@@ -19,6 +19,7 @@ body {
     text-align: center;
     padding-bottom: 30px;
     white-space: nowrap;
+    min-height: 50%
 }
 #projects {
     padding-top: 20px;
@@ -46,5 +47,21 @@ body {
 .navbar-inverse {
     background-color:transparent;
     border: none;
-    font-size: 1.5em;
+    font-size: 20px;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.navbar-toggle {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.navbar-toggle:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
