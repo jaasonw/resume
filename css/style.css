@@ -9,8 +9,12 @@
 body {
     background-color: #131B1F;
 }
-.navbar {
-    text-align: right;
+a {
+    color: #4AA2E9;
+}
+a:hover {
+    text-decoration: none;
+    color: #0A76D0;    
 }
 .navbar a {
     color: #8692A0 !important;
@@ -19,17 +23,17 @@ body {
     color: #4AA2E9 !important;
 }
 .navbar-inverse {
-    background-color:transparent;
+    background-color: transparent;
     border: none;
     font-size: 20px;
+    text-align: right;
 }
 #footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     font-size: 20px;
     text-align: center;
     padding-bottom: 30px;
+    padding-top: 10px;
 }
 .navbar-toggle {
     background-color: transparent !important;
@@ -38,4 +42,8 @@ body {
 .navbar-toggle:hover {
     background-color: transparent !important;
     border-color: transparent !important;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
 }
