@@ -22,11 +22,11 @@ a:hover {
 .navbar a:hover {
     color: #4AA2E9 !important;
 }
-.navbar-inverse {
+.navbar {
     background-color: transparent;
     border: none;
     font-size: 20px;
-    text-align: right;
+    text-align: center;
 }
 #footer {
     width: 100%;
@@ -34,14 +34,6 @@ a:hover {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 10px;
-}
-.navbar-toggle {
-    background-color: transparent !important;
-    border-color: transparent !important;
-}
-.navbar-toggle:hover {
-    background-color: transparent !important;
-    border-color: transparent !important;
 }
 .navbar-brand {
     font-size: 25px;
