@@ -28,6 +28,17 @@
 \titleformat{\subsection}[runin]{}{}{}{\large \textbf}[\normalsize]
 \addtolength{\topmargin}{\headerheight{}}
 
+\newcommand{\resumesection}[3]{
+    \subsection*{#1}
+    \ 
+    \footnotesize
+    \textcolor{wordgrey}{#2}
+    \normalsize
+    \hfill
+    \textcolor{wordgrey}{#3}
+}
+
+
 \fancypagestyle{useheader}
 {
     \fancyhf{}
@@ -40,17 +51,16 @@
 
 \begin{document}
 \pagestyle{useheader}
+
 \section*{\textcolor{wordblue}{EDUCATION}}
-\subsection*{Pasadena City College}
-\hfill
-\textcolor{wordgrey}{August 2017 - Present}\\
+\resumesection{Pasadena City College}{}{August 2017 - Present}\\
 \textbf{Major}: Computer Science\\
 \textbf{Major GPA}: 3.42\\
 \textbf{Coursework}: Discrete Mathematics, Data Structures, Object-Oriented Programming (C++ and Java), Intro to Computer Science, AP Computer Science A
 
-\section*{\textcolor{wordblue}{PROJECTS}}
 
-\subsection*{SQL Database}
+\section*{\textcolor{wordblue}{PROJECTS}}
+\resumesection{SQL Database}{}{}
 \begin{itemize}
     \item Developed an SQLite clone in C++ that stores tables locally in binary files
     \item Supports a subset of SQL commands (SELECT, INSERT INTO, CREATE TABLE, DROP) 
@@ -58,14 +68,14 @@
     \item Implemented a string tokenizer and SQL parser using a state machine
 \end{itemize}
 
-\subsection*{Graphing Calculator}
+\resumesection{Graphing Calculator}{}{}
 \begin{itemize}
     \item Developed a simple graphing calculator in C++ that plots 2D cartesian functions, like Desmos
-    \item Uses an input tokenizer and the shunting yard algorithm to convert an infix expression to postfix notation to be evaluated
-    \item Used SFML as a renderer
+    \item Used an input tokenizer and the shunting yard algorithm to convert an infix expression to postfix notation to be evaluated
+    \item Used inheritance to develop an entity based framework
 \end{itemize}
 
-\subsection*{Sushi Shop}
+\resumesection{Sushi Shop}{}{}
 \begin{itemize}
     \item Worked in a team to develop a sushi making game in Java
     \item Player is given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
@@ -73,35 +83,28 @@
     \item Designed the game engine framework
 \end{itemize}
 
+
 \section*{\textcolor{wordblue}{WORK EXPERIENCE}}
-\subsection*{PCC Learning Assistance Center, Pasadena}
-\ 
-\footnotesize
-\textcolor{wordgrey}{Computer Science Tutor}
-\normalsize
-\hfill
-\textcolor{wordgrey}{January 2019 - Present}
+\resumesection{PCC Learning Assistance Center, Pasadena}{Computer Science Tutor}{January 2019 - Present}
 \begin{itemize}
     \item Worked one-on-one with students needing assistance to help debug code, understand concepts, and work out solutions for programming assignments
     \item Worked with professors to learn how to more effectively assist students and build healthy study habits
     \item Helped troubleshoot problems with classroom computers
 \end{itemize}
+
+
 \section*{\textcolor{wordblue}{INVOLVEMENTS}}
-\subsection*{She.Codes}
-\ 
-\footnotesize
-\textcolor{wordgrey}{Webmaster}
-\normalsize
-\hfill
-\textcolor{wordgrey}{Fall 2019}
+\resumesection{She.Codes}{Webmaster}{Fall 2019}
 \begin{itemize}
     \item A club at PCC that aims to provide a sense of community and support to women in the tech industry
     \item Collected and managed new member registration info
     \item Managed sending weekly newsletters to club members    
 \end{itemize}
+
+
 \section*{\textcolor{wordblue}{SKILLS}}
 \textbf{Languages}: C++, Python, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{cmr}\selectfont\LaTeX}\\
-\textbf{Libraries/Frameworks}: SFML, Node.js, jQuery, discord.js, Bootstrap, discord.py\\
+\textbf{Libraries/Frameworks}: Bootstrap, discord.js, discord.py, jQuery, Node.js, SFML\\
 \textbf{Tools/Software}: git, bash
 
 \end{document}
