@@ -1,19 +1,25 @@
 \documentclass{article}
-\usepackage{amsmath, amssymb, fancyhdr, fontawesome, setspace, tabularx, xcolor}
-\usepackage[margin = 0.5in]{geometry}
-\usepackage{fontspec}
-\usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage[margin = 0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
 
 % defines
 \def\first{Jason}
 \def\last{Wong}
-
-\definecolor{wordblue}{RGB}{68,114,196}
-\definecolor{wordgrey}{RGB}{89,89,89}
-\def\headerheight{35pt}
+\def\github{\href{https://github.com/jaasonw/}{jaasonw}}
+\def\linkedin{\href{https://www.linkedin.com/in/wayson/}{wayson}}
+\def\email{\href{mailto:jayywong92@gmail.com}{jayywong92@gmail.com}}
 
 % config
+\definecolor{wordblue}{RGB}{68,114,196}
+\definecolor{wordgrey}{RGB}{89,89,89}
+\def\headerheight{25pt}
 \setlist{nolistsep}
 \setmainfont{Open Sans}
 \setstretch{1.2}
@@ -28,7 +34,7 @@
     \setlength{\headheight}{\headerheight{}}
     \chead{
         \Huge{\textbf{\textcolor{wordblue}{\first{} \last{}}}}\\
-        \small{\textcolor{wordgrey}{\faGithub \ jaasonw  |  \faLinkedin \ wayson}  |  \faEnvelope \ jayywong92@gmail.com}
+        \small{\textcolor{wordgrey}{\faGithub \ \github{}  |  \faLinkedin \ \linkedin{}}  |  \faEnvelope \ \email{}}
     }
 }
 
