@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, fancyhdr, fontawesome, setspace, tabularx, xcolor}
+\usepackage[margin = 0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% defines
+\def\first{Jason}
+\def\last{Wong}
+
+\definecolor{wordblue}{RGB}{68,114,196}
+\definecolor{wordgrey}{RGB}{89,89,89}
+\def\headerheight{35pt}
+
+% config
+\setlist{nolistsep}
+\setmainfont{Open Sans}
+\setstretch{1.2}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+\titleformat{\subsection}[runin]{}{}{}{\large \textbf}[\normalsize]
+\addtolength{\topmargin}{\headerheight{}}
+
+\fancypagestyle{useheader}
+{
+    \fancyhf{}
+    \setlength{\headheight}{\headerheight{}}
+    \chead{
+        \Huge{\textbf{\textcolor{wordblue}{\first{} \last{}}}}\\
+        \small{\textcolor{wordgrey}{\faGithub \ github.com/jaasonw  |  \faLinkedin \ linkedin.com/in/wayson}  |  \faEnvelope \ jayywong92@gmail.com}
+    }
+}
+
+\begin{document}
+\pagestyle{useheader}
+\section*{\textcolor{wordblue}{EDUCATION}}
+\subsection*{Pasadena City College}
+\hfill
+\textcolor{wordgrey}{August 2017 - Present}\\
+\textbf{Major}: Computer Science\\
+\textbf{Major GPA}: 3.42\\
+\textbf{Coursework}: Discrete Mathematics, Data Structures, Object-Oriented Programming (C++ and Java), Intro to Computer Science, AP Computer Science A
+
+\section*{\textcolor{wordblue}{PROJECTS}}
+
+\subsection*{SQL Database}
+\begin{itemize}
+    \item Developed an SQLite clone in C++ that stores tables locally in binary files
+    \item Supports a subset of SQL commands (SELECT, INSERT INTO, CREATE TABLE, DROP) 
+    \item Implemented a B+Tree for indexing
+    \item Implemented a string tokenizer and SQL parser using a state machine
+\end{itemize}
+
+\subsection*{Graphing Calculator}
+\begin{itemize}
+    \item Developed a simple graphing calculator in C++ that plots 2D cartesian functions, like Desmos
+    \item Uses an input tokenizer and the shunting yard algorithm to convert an infix expression to postfix notation to be evaluated
+    \item Used SFML as a renderer
+\end{itemize}
+
+\subsection*{Sushi Shop}
+\begin{itemize}
+    \item Worked in a team to develop a sushi making game in Java
+    \item Player is given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
+    \item Uses JavaFX as the primary GUI library and the JavaFX canvas as the primary renderer 
+    \item Designed the game engine framework
+\end{itemize}
+
+\section*{\textcolor{wordblue}{WORK EXPERIENCE}}
+\subsection*{PCC Learning Assistance Center, Pasadena}
+\ 
+\scriptsize
+\textcolor{wordgrey}{Computer Science Tutor}
+\normalsize
+\hfill
+\textcolor{wordgrey}{January 2019 - Present}
+\begin{itemize}
+    \item Worked one-on-one with students needing assistance to help debug code, understand concepts, and work out solutions for programming assignments
+    \item Worked with professors to learn how to more effectively assist students and build healthy study habits
+    \item Helped troubleshoot problems with classroom computers
+\end{itemize}
+\section*{\textcolor{wordblue}{INVOLVEMENTS}}
+\subsection*{She.Codes}
+\ 
+\scriptsize
+\textcolor{wordgrey}{Webmaster}
+\normalsize
+\hfill
+\textcolor{wordgrey}{Fall 2019}
+\begin{itemize}
+    \item A club at PCC that aims to provide a sense of community and support to women in the tech industry
+    \item Collected and managed new member registration info
+    \item Managed sending weekly newsletters to club members    
+\end{itemize}
+\section*{\textcolor{wordblue}{SKILLS}}
+\textbf{Languages}: C++, Python, Java, JavaScript/TypeScript, HTML/CSS, LaTeX\\
+\textbf{Libraries/Frameworks}: SFML, Node.js, jQuery, discord.js, Bootstrap, discord.py\\
+\textbf{Tools/Software}: git, bash
+
+\end{document}
