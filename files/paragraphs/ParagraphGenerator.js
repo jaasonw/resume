@@ -67,7 +67,7 @@ var ParagraphGenerator = /** @class */ (function () {
         this.sentences.push([
             this.name + " was accepting of the support and care.",
             this.name + " was appreciative and thankful for the support and interventions.",
-            this.personalPronounC + " was accepting of the care and interventions. ",
+            this.personalPronounC + " was accepting of the care and interventions.",
             this.name + " was appreciative and accepting of the care.",
             this.name + " was thankful and accepting for the session."
         ]);
@@ -134,7 +134,7 @@ var ParagraphGenerator = /** @class */ (function () {
             "SW provided reality orientation and offered opportunity to reminiscence as a form of cognitive stimulation."
         ];
         this.problems[6] = [
-            this.name + " expressed feelings of loneliness and isolation. ",
+            this.name + " expressed feelings of loneliness and isolation.",
             this.name + " remained mostly quiet and said few words. " + this.name + " seems to lack motivation for social interaction."
         ];
         this.treatments[6] = [
