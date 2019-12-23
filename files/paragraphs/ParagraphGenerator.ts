@@ -28,9 +28,9 @@ class ParagraphGenerator {
         this.initProblemTreatments();
     }
     public generateParagraph() : string {
-        var paragraph = "";
-        var problemTreatment1 = this.generateProblemTreatment();
-        var problemTreatment2 = this.generateProblemTreatment();
+        let paragraph: string = "";
+        let problemTreatment1: string = this.generateProblemTreatment();
+        let problemTreatment2: string = this.generateProblemTreatment();
 
         while (problemTreatment1 == problemTreatment2) {
             problemTreatment2 = this.generateProblemTreatment();
@@ -46,8 +46,8 @@ class ParagraphGenerator {
         return paragraph;
     }
     private generateProblemTreatment(): string {
-        var sentence = "";
-        var index = Math.floor((Math.random() * this.problems.length));
+        let sentence: string = "";
+        let index: number = Math.floor((Math.random() * this.problems.length));
         sentence = this.getRandom(this.problems[index]) + " " + this.getRandom(this.treatments[index]);
         return sentence;
     }
