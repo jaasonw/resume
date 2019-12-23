@@ -3,22 +3,22 @@ enum Gender {
 }
 
 class ParagraphGenerator {
-    private sentences: Array<Array<string>>;
+    private sentences: Array<Array<string>> = [];
 
-    private personalPronoun: string;
-    private personalPronounC: string;
+    private personalPronoun: string = "";
+    private personalPronounC: string = "";
     
-    private possessivePronoun: string;
-    private possessivePronounC: string;
+    private possessivePronoun: string = "";
+    private possessivePronounC: string = "";
 
-    private objectivePronoun: string;
-    private objectivePronounC: string;
+    private objectivePronoun: string = "";
+    private objectivePronounC: string = "";
 
-    private problems: Array<Array<string>>;
-    private treatments: Array<Array<string>>;
+    private problems: Array<Array<string>> = [];
+    private treatments: Array<Array<string>> = [];
 
-    private name: string;
-    private gender: Gender;
+    private name: string = "";
+    private gender: Gender = Gender.Male;
 
     constructor(name: string, gender: Gender) {
         this.name = name;
@@ -66,7 +66,6 @@ class ParagraphGenerator {
         this.objectivePronounC = (this.gender == Gender.Male) ? "Him" : "Her"
     }
     private initSentences() {
-        this.sentences = [];
         // intro 1
         this.sentences.push([`SW met with ${this.name} for monthly individual counseling.`]);
         // intro 2
@@ -100,10 +99,6 @@ class ParagraphGenerator {
         ]);
     }
     private initProblemTreatments() {
-        this.problems = []
-        this.treatments = []
-
-
         this.problems[0] = [
             `However, ${this.personalPronoun} reported having a fall at home with no hospitalizations. ${this.personalPronounC} expressed worry about ${this.possessivePronoun} physical health decline with age and further risk of fall.`,
             `${this.name} reported having multiple near fall incidents and continues to be at risk of fall.`

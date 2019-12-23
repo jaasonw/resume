@@ -1,3 +1,4 @@
+"use strict";
 var Gender;
 (function (Gender) {
     Gender[Gender["Male"] = 0] = "Male";
@@ -5,6 +6,17 @@ var Gender;
 })(Gender || (Gender = {}));
 var ParagraphGenerator = /** @class */ (function () {
     function ParagraphGenerator(name, gender) {
+        this.sentences = [];
+        this.personalPronoun = "";
+        this.personalPronounC = "";
+        this.possessivePronoun = "";
+        this.possessivePronounC = "";
+        this.objectivePronoun = "";
+        this.objectivePronounC = "";
+        this.problems = [];
+        this.treatments = [];
+        this.name = "";
+        this.gender = Gender.Male;
         this.name = name;
         this.gender = gender;
         this.initPronouns();
@@ -46,7 +58,6 @@ var ParagraphGenerator = /** @class */ (function () {
         this.objectivePronounC = (this.gender == Gender.Male) ? "Him" : "Her";
     };
     ParagraphGenerator.prototype.initSentences = function () {
-        this.sentences = [];
         // intro 1
         this.sentences.push(["SW met with " + this.name + " for monthly individual counseling."]);
         // intro 2
@@ -78,8 +89,6 @@ var ParagraphGenerator = /** @class */ (function () {
         ]);
     };
     ParagraphGenerator.prototype.initProblemTreatments = function () {
-        this.problems = [];
-        this.treatments = [];
         this.problems[0] = [
             "However, " + this.personalPronoun + " reported having a fall at home with no hospitalizations. " + this.personalPronounC + " expressed worry about " + this.possessivePronoun + " physical health decline with age and further risk of fall.",
             this.name + " reported having multiple near fall incidents and continues to be at risk of fall."
