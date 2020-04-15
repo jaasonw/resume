@@ -14,11 +14,13 @@
 \def\last{Wong}
 \def\github{\href{https://github.com/jaasonw/}{jaasonw}}
 \def\linkedin{\href{https://www.linkedin.com/in/wayson/}{wayson}}
-\def\email{\href{mailto:jayywong92@gmail.com}{jayywong92@gmail.com}}
+\def\email{\href{mailto:wayson@csu.fullerton.edu}{wayson@csu.fullerton.edu}}
 
 % config
 \definecolor{wordblue}{RGB}{68,114,196}
 \definecolor{wordgrey}{RGB}{89,89,89}
+\definecolor{csufblue}{RGB}{0,89,162}
+\definecolor{csufgrey}{RGB}{85,85,85}
 \def\headerheight{25pt}
 \setlist{nolistsep}
 \setmainfont{Open Sans}
@@ -26,13 +28,13 @@
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
 \titleformat{\subsection}[runin]{}{}{}{\large \textbf}[\normalsize]
-\titleformat{\section}{\color{wordblue}\normalfont\large\bfseries}{\color{wordblue}}{1em}{}
+\titleformat{\section}{\color{csufblue}\normalfont\large\bfseries}{\color{csufblue}}{1em}{}
 \addtolength{\topmargin}{\headerheight{}}
 \hypersetup{
     colorlinks,
-    linkcolor = wordgrey,
-    citecolor = wordgrey,
-    urlcolor = wordgrey
+    linkcolor = csufgrey,
+    citecolor = csufgrey,
+    urlcolor = csufgrey
 }
 
 
@@ -40,10 +42,11 @@
     \subsection*{#1}
     \ 
     \footnotesize
-    \textcolor{wordgrey}{#2}
-    \normalsize
+    \textcolor{csufgrey}{#2}
+    \footnotesize
     \hfill
-    \textcolor{wordgrey}{#3}
+    \textcolor{csufgrey}{#3}
+    \normalsize
 }
 
 
@@ -52,8 +55,8 @@
     \fancyhf{}
     \setlength{\headheight}{\headerheight{}}
     \chead{
-        \Huge{\textbf{\textcolor{wordblue}{\first{} \last{}}}}\\
-        \small{\textcolor{wordgrey}{\faGithub \ \github{}  |  \faLinkedin \ \linkedin{}}  |  \faEnvelope \ \email{}}
+        \Huge{\textbf{\textcolor{csufblue}{\first{} \last{}}}}\\
+        \small{\textcolor{csufgrey}{\faGithub \ \github{}  |  \faLinkedin \ \linkedin{}}  |  \faEnvelope \ \email{}}
     }
 }
 
@@ -61,12 +64,18 @@
 \pagestyle{useheader}
 
 \section*{Education}
-\resumesection{Pasadena City College}{}{August 2017 - June 2020}\\
-\textbf{Area of Study}: Computer Science\\
-\textbf{Coursework}: UNIX Scripting, Discrete Mathematics, Data Structures, Object-Oriented Programming
-\\
-\resumesection{California State University, Fullerton}{}{August 2020 - Present}\\
-\textbf{Degree}: Computer Science B.S.\\
+\resumesection{Pasadena City College}{}{August 2017 - June 2020}
+\begin{itemize}
+    \item \textbf{Degree}: Mathematics AS-T
+    \item \textbf{Area of Study}: Computer Science
+    \item \textbf{Coursework}: Unix Scripting, Discrete Mathematics, Data Structures, Object-Oriented Programming
+\end{itemize}
+
+\resumesection{California State University, Fullerton}{}{August 2020 - Present}
+\begin{itemize}
+    \item \textbf{Degree}: Computer Science BS (Expected 2022)
+\end{itemize}
+\hfill
 \section*{Projects}
 \resumesection{Spotify Playlist Sorter}{}{github.com/jaasonw/spotify-new-music-sorter}
 \begin{itemize}
@@ -85,27 +94,25 @@
 \resumesection{Graphing Calculator}{}{github.com/jaasonw/graphing-calculator}
 \begin{itemize}
     \item Developed a graphing calculator in C++ that plots 2D cartesian functions
-    \item Implemented an input tokenizer and the shunting yard algorithm to convert infix expressions to postfix
+    \item Implemented the shunting yard algorithm to parse mathematical expressions to postfix notation
     \item Utilized inheritance and polymorphism to handle multiple graphs
-    \item Used SFML for rendering
 \end{itemize}
 
 \resumesection{Sushi Shop}{}{github.com/jaasonw/sushi-shop}
 \begin{itemize}
-    \item Led a team to develop a sushi making game in Java
+    \item Led a team to develop a sushi making game in Java and JavaFX
     \item Developed a game where the player is given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
-    \item Used JavaFX and the JavaFX canvas for the GUI and rendering
     \item Utilized inheritance to develop the game engine framework and game logic
 \end{itemize}
-
+\hfill
 \section*{Work Experience}
-\resumesection{PCC Learning Assistance Center, Pasadena}{Computer Science Tutor / Lab TA}{January 2019 - Present}
+\resumesection{PCC Learning Assistance Center, Pasadena}{Tutor / Lab TA}{January 2019 - Present}
 \begin{itemize}
     \item Worked one-on-one with students to teach computer science concepts and debugging techniques
     \item Worked with professors to help improve lectures and build long term study habits within students
     \item Provided assistance to students with software issues in classrooms and computer labs
 \end{itemize}
-
+\hfill
 \section*{Involvements}
 \resumesection{She.Codes}{Webmaster, Treasurer}{September 2019 - Present}
 \begin{itemize}
@@ -114,10 +121,10 @@
     \item Wrote and sent weekly newsletters to club members
     \item Hosted and co-hosted workshops during club meetings
 \end{itemize}
-
+\hfill
 \section*{Skills}
 \textbf{Languages}: C++, Python, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{cmr}\selectfont\LaTeX}, bash\\
 \textbf{Libraries/Frameworks}: Bootstrap, Flask, jQuery, Node.js\\
-\textbf{Tools/Software}: git, UNIX/Linux, AWS EC2
+\textbf{Tools/Software}: git, Unix/Linux, AWS EC2
 
 \end{document}
