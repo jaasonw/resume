@@ -3,7 +3,7 @@
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 \usepackage{fontspec}
-\usepackage[margin = 0.7in]{geometry}
+\usepackage[margin = 0.6in]{geometry}
 \usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{titlesec}
@@ -30,17 +30,13 @@
 \titleformat{\subsection}[runin]{}{}{}{\large \textbf}[\normalsize]
 \titleformat{\section}{\color{csufblue}\normalfont\large\bfseries}{\color{csufblue}}{1em}{}
 \addtolength{\topmargin}{\headerheight{}}
-\hypersetup{
-    colorlinks,
-    linkcolor = csufgrey,
-    citecolor = csufgrey,
-    urlcolor = csufgrey
-}
+\hypersetup{colorlinks, linkcolor = csufgrey, urlcolor = csufgrey}
+\hyphenpenalty 10000
+\exhyphenpenalty 10000
 
 
 \newcommand{\resumesection}[3]{
     \subsection*{#1}
-    \ 
     \footnotesize
     \textcolor{csufgrey}{#2}
     \footnotesize
@@ -66,47 +62,47 @@
 \section*{Education}
 \resumesection{Pasadena City College}{}{August 2017 - June 2020}
 \begin{itemize}
-    \item \textbf{Degree}: Mathematics AS-T
+    \item \textbf{Degree}: Mathematics, AS-T
     \item \textbf{Area of Study}: Computer Science
     \item \textbf{Coursework}: Unix Scripting, Discrete Mathematics, Data Structures, Object-Oriented Programming
 \end{itemize}
 
 \resumesection{California State University, Fullerton}{}{August 2020 - Present}
 \begin{itemize}
-    \item \textbf{Degree}: Computer Science BS (Expected 2022)
+    \item \textbf{Degree}: Computer Science, B.S. (Expected 2022)
 \end{itemize}
 \hfill
 \section*{Projects}
-\resumesection{Spotify Playlist Sorter}{}{github.com/jaasonw/spotify-new-music-sorter}
+\resumesection{Spotify Playlist Sorter}{Developer / Maintainer}{github.com/jaasonw/spotify-new-music-sorter}
 \begin{itemize}
     \item Worked in a team to develop a web app in Python that places liked songs on Spotify into a playlist using the Spotify Web API
     \item Developed and designed the frontend using Flask and Bootstrap
     \item Deployed the app onto an Amazon EC2 instance
 \end{itemize}
 
-\resumesection{SQL Relational Database System}{}{github.com/jaasonw/Database}
+\resumesection{SQL Relational Database System}{Developer}{github.com/jaasonw/Database}
 \begin{itemize}
     \item Developed a relational database management system in C++ that supports a subset of SQL commands (SELECT, INSERT INTO, CREATE TABLE, DROP) 
     \item Implemented a B+Tree to index database entries for fast querying
     \item Implemented a finite state machine to develop an SQL command parser
 \end{itemize}
 
-\resumesection{Graphing Calculator}{}{github.com/jaasonw/graphing-calculator}
+\resumesection{Graphing Calculator}{Developer}{github.com/jaasonw/graphing-calculator}
 \begin{itemize}
-    \item Developed a graphing calculator in C++ that plots 2D cartesian functions
-    \item Implemented the shunting yard algorithm to parse mathematical expressions to postfix notation
-    \item Utilized inheritance and polymorphism to handle multiple graphs
+    \item Developed a graphing calculator in C++ and SFML using a modular, object-oriented design
+    \item Plots 2D cartesian functions with panning and zooming and individual graph hiding
+    \item Implemented the shunting yard algorithm to parse mathematical expressions to postfix notation with respect for order of operations
 \end{itemize}
 
-\resumesection{Sushi Shop}{}{github.com/jaasonw/sushi-shop}
+\resumesection{Sushi Shop}{Developer}{github.com/jaasonw/sushi-shop}
 \begin{itemize}
     \item Led a team to develop a sushi making game in Java and JavaFX
     \item Developed a game where the player is given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
-    \item Utilized inheritance to develop the game engine framework and game logic
+    \item Designed and built an object-oriented game engine framework and implemented game logic
 \end{itemize}
 \hfill
 \section*{Work Experience}
-\resumesection{PCC Learning Assistance Center, Pasadena}{Tutor / Lab TA}{January 2019 - Present}
+\resumesection{PCC Learning Assistance Center}{Computer Science Tutor / Lab TA}{January 2019 - Present}
 \begin{itemize}
     \item Worked one-on-one with students to teach computer science concepts and debugging techniques
     \item Worked with professors to help improve lectures and build long term study habits within students
@@ -120,6 +116,7 @@
     \item Collected new member sign up information
     \item Wrote and sent weekly newsletters to club members
     \item Hosted and co-hosted workshops during club meetings
+    \item Designed and maintained the club website
 \end{itemize}
 \hfill
 \section*{Skills}
