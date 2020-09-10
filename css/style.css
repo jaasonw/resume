@@ -1,41 +1,45 @@
-/* Global Stylesheet */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
-* {
-    font-family: "Didact Gothic";
-    color: #E4E4E6;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 body {
-    background-color: #131B1F;
+  color: #444;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  padding: 1em;
+  margin: auto;
+  max-width: 70em;
+  background: #fefefe;
 }
-a {
-    color: #4AA2E9;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  align-content: center;
 }
-a:hover {
-    text-decoration: none;
-    color: #0A76D0;    
+#nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 55%;
+  align-self: center;
 }
-.navbar a {
-    color: #8692A0 !important;
+#nav_links a:link {
+  color: black;
+  text-decoration: none;
 }
-.navbar a:hover {
-    color: #4AA2E9 !important;
+#nav_links a:visited { color: black; }
+#nav_links a:hover { text-decoration: underline; }
+.content {
+  font-size: 20px;
 }
-.navbar {
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    text-align: center;
+footer {
+  padding-top: 20px;
+  font-size: 15px;
 }
-#footer {
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 10px;
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.navbar-brand {
-    font-size: 25px;
-    font-weight: bold;
+#skills {
+  columns: 2;
 }
