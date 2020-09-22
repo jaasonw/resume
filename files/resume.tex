@@ -24,7 +24,7 @@
 \definecolor{csufgrey}{RGB}{85,85,85}
 \def\headerheight{25pt}
 \setlist{nolistsep}
-\setmainfont{Quicksand}
+\setmainfont{Open Sans}
 \setstretch{1.2}
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
@@ -39,11 +39,12 @@
 \newcommand{\resumesection}[3]{
     \subsection*{#1}
     \ 
-    \footnotesize
+    \ 
+    \small
     \textcolor{csufgrey}{#2}
-    \footnotesize
+    \normalsize
     \hfill
-    \textcolor{csufgrey}{#3}
+    \textcolor{black}{#3}
     \normalsize
 }
 
@@ -71,17 +72,23 @@
 \resumesection{Pasadena City College}{}{August 2017 - June 2020}
 \begin{itemize}
     \item \textbf{Degree}: Mathematics, AS-T
-    \item \textbf{Coursework}: Unix Scripting, Discrete Mathematics, Data Structures, Object-Oriented Programming
+    \item \textbf{Coursework}: Computer Organization, Unix Scripting, Discrete Mathematics, Data Structures
 \end{itemize}
 \hfill
+\section*{Skills}
+\textbf{Languages}: C++, Python, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart\\
+\textbf{Libraries/Frameworks}: Bootstrap, Flask, Node.js, Flutter, Firebase\\
+\textbf{Tools/Software}: git, Unix/Linux, AWS, Google Cloud Platform
+\\
 \section*{Work Experience}
-\resumesection{Nex-ii LLC, Twiine}{Mobile and Backend Developer}{June 2020 - September 2020}
+\resumesection{Nex-ii LLC, Twiine}{Full Stack Developer}{June 2020 - September 2020}
 \begin{itemize}
-    \item We're a startup that aims to create a platform that helps to plan optimal hangouts and dates
-    \item Our mobile app is built on Flutter and our backend is powered by Firebase
-    \item Worked on developing the mobile app, implementing major components and functionality
-    \item Designed and implemented parts of the backend API with Node.js and Python deployed on Firebase Cloud Functions
-    \item Structured and maintained the database to fit the needs of the app and website
+    \item Built the hangouts planning page with support for realtime updates from the database
+    \item Developed the backend login and signup flow with support for Google, Facebook, and Email authentication
+    \item Designed and implemented the API allowing users to send event invitations to other users
+    \item Optimized the database to minimize the number of queries for Firebase's per document billing
+    \item Used Flutter to build the mobile app
+    \item Used Node.js and Python on Firebase to build the backend
 \end{itemize}
 \resumesection{PCC Learning Assistance Center}{Computer Science Learning Assistant}{January 2019 - June 2020}
 \begin{itemize}
@@ -91,39 +98,35 @@
 \end{itemize}
 \hfill
 \section*{Projects}
-\resumesection{Spotify Seasonal Playlist Sorter}{Developer}{github.com/jaasonw/spotify-new-music-sorter}
+\resumesection{Spotify Seasonal Playlist Sorter}{Developer}{April 2020}
 \begin{itemize}
-    \item Worked in a team to develop a web app in Python that places liked songs on Spotify into playlists grouped by seasons using the Spotify REST API
-    \item Developed and designed the frontend using Flask and Bootstrap
-    \item Deployed the app onto an AWS EC2 instance
+    \item Worked in a team to develop a web app that places liked songs on Spotify into playlists grouped by seasons
+    \item Developed and designed the frontend and deployed the app onto an AWS EC2 instance
+    \item Used Python with Flask and the Spotify REST API
 \end{itemize}
 
-\resumesection{SQL Relational Database System}{Developer}{github.com/jaasonw/Database}
+\resumesection{SQL Relational Database System}{Developer}{June 2019}
 \begin{itemize}
     \item Developed a relational database management system in C++ that supports a subset of SQL commands
     \item Implemented a B+Tree to index database entries for fast querying
     \item Implemented an SQL command parser
 \end{itemize}
 
-\resumesection{Sushi Shop}{Developer}{github.com/jaasonw/sushi-shop}
+\resumesection{Sushi Shop}{Developer}{May 2017}
 \begin{itemize}
-    \item Led a team to develop a sushi making game in Java and JavaFX
+    \item Led a team to develop a sushi making game in Java
     \item Developed a game where the player is given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
-    \item Designed and built an object-oriented game engine framework and implemented game logic
 \end{itemize}
 \hfill
-\section*{Involvements}
+\section*{Extracurriculars}
 \resumesection{She.Codes}{Webmaster, Treasurer}{September 2019 - June 2020}
 \begin{itemize}
     \item A club at PCC that aims to create a community for women in the tech industry
     \item Wrote and sent weekly newsletters to club members
-    \item Hosted and co-hosted workshops during club meetings
+    \item Hosted a workshop introducing members to the basics of git and version control
     \item Designed and maintained the club website
 \end{itemize}
 \hfill
-\section*{Skills}
-\textbf{Languages}: C++, Python, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart\\
-\textbf{Libraries/Frameworks}: Bootstrap, Flask, Node.js, Flutter, Firebase\\
-\textbf{Tools/Software}: git, Unix/Linux, Amazon AWS, Google Cloud Platform
+
 
 \end{document}
