@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <nav>
+      <h2>jasonw</h2>
+    </nav>
+    <h1>Return Values vs Printing</h1>
+    <div class="content">
+      A common mistake I see people make when learning functions is distinguishing 
+      the difference between a return value and a function that prints something
+<pre><code>
+int sum(int a, int b) {
+  return a + b;
+}
+
+// not the same!
+void sum2(int a, int b) {
+  cout << a + b;
+}
+</code></pre>
+      <h4>Return values</h4>
+      Return values are what a function call would spit out after it successfully runs.
+      <br>
+      Consider the following and think about what they would output, go ahead 
+      and run them
+      <iframe height="600px" width="100%" src="https://repl.it/@jaasonw/pt1?lite=true" scrolling="no" frameborder="no"
+        allowtransparency="true" allowfullscreen="true"
+        sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
+      </iframe>
+      <br>
+      <iframe height="600px" width="100%" src="https://repl.it/@jaasonw/pt2?lite=true" scrolling="no" frameborder="no"
+        allowtransparency="true" allowfullscreen="true"
+        sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
+      </iframe>
+      <br>
+      <code>sum()</code> doesnt print anything but it returns an integer
+      To better illustrate the difference here, we should think about what needs to 
+      happen in order for <code>sum(4,5)</code> to print a value
+    </div>
+    <footer>
+      Copyright 2020 Jason Wong
+    </footer>
+  </body>
+</html>
