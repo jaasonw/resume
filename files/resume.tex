@@ -3,7 +3,7 @@
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 \usepackage{fontspec}
-\usepackage[margin = 0.6in]{geometry}
+\usepackage[margin = 0.4in]{geometry}
 \usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{titlesec}
@@ -22,7 +22,7 @@
 \definecolor{wordgrey}{RGB}{89,89,89}
 \definecolor{csufblue}{RGB}{0,89,162}
 \definecolor{csufgrey}{RGB}{85,85,85}
-\def\headerheight{25pt}
+\def\headerheight{20pt}
 \setlist{nolistsep}
 \setmainfont{Quicksand}
 \setstretch{1.2}
@@ -65,26 +65,24 @@
 \pagestyle{useheader}
 
 \section*{Education}
-\resumesection{California State University, Fullerton}{}{August 2020 - Present}
+\resumesection{California State University, Fullerton}{}{Computer Science, B.S. \& Minor in Mathematics, Expected 2022}
 \begin{itemize}
-    \item \textbf{Degree}: Computer Science, B.S. (Expected 2022)
-    \item \textbf{Coursework}: Databases
+    \item \textbf{Coursework}: File Structures \& Database Systems
 \end{itemize}
-\resumesection{Pasadena City College}{}{August 2017 - June 2020}
+\resumesection{Pasadena City College}{}{Mathematics, AS-T, 2020}
 \begin{itemize}
-    \item \textbf{Degree}: Mathematics, AS-T
     \item \textbf{Coursework}: Computer Organization, Unix Scripting, Discrete Mathematics, Data Structures
 \end{itemize}
 \hfill
 \section*{Skills}
-\textbf{Languages}: C++, Python, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, x86 Assembly\\
+\textbf{Languages}: C++, Python, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL\\
 \textbf{Libraries/Frameworks}: Bootstrap, Flask, Node.js, Flutter\\
-\textbf{Tools/Software}: git, Unix/Linux, AWS, Google Cloud Platform (Firebase)
+\textbf{Tools/Software}: git, Unix/Linux, AWS, Google Cloud Platform, SQLite
 \\
 \section*{Work Experience}
 \resumesection{Nex-ii LLC, Twiine}{Full Stack Developer, twiine.com}{June 2020 - September 2020}
 \begin{itemize}
-    \item Built a hangouts planning and user profile page with support for realtime updates from the database
+    \item Built a hangouts planning and user profile page with support for realtime updates
     \item Developed the backend login and signup flow with support for Google, Facebook, and Email authentication
     \item Designed and implemented the API allowing users to schedule hangouts and send invitations to other users
     \item Optimized the database to minimize the number of queries for Firebase's per document read billing
@@ -95,7 +93,7 @@
     \item Worked one-on-one with students to teach computer science concepts and debugging techniques
     \item Worked with professors to help improve lectures and build long term study habits within students
     \item Provided assistance to students with software issues in classrooms and computer labs
-    \item Assisted and advised staff and administrators on the transition to remote tutoring during the COVID-19 Pandemic
+    \item Assisted and advised staff on the transition to remote tutoring during the COVID-19 pandemic
 \end{itemize}
 \hfill
 \section*{Projects}
@@ -103,14 +101,21 @@
 \begin{itemize}
     \item Worked in a team to develop a web app that places liked songs on Spotify into playlists grouped by seasons
     \item Developed and designed the frontend and deployed the app onto an AWS EC2 instance
-    \item Used Python with Flask and the Spotify REST API
+    \item Added a SQLite database to manage user data and playlists
+    \item Used Python with the Spotify REST API and Flask
+\end{itemize}
+
+\resumesection{APPE Regional Draft Analysis}{Developer}{January 2021}
+\begin{itemize}
+    \item Monte Carlo simulation in Python to forecast the probability of 
+        pharmacy students getting their preferred region for their APPE rotations
 \end{itemize}
 
 \resumesection{SQL Relational Database System}{Developer}{June 2019}
 \begin{itemize}
     \item Developed a relational database management system in C++ that supports a subset of SQL commands
     \item Implemented a B+Tree to index database entries for fast querying
-    \item Implemented an SQL command parser
+    \item Implemented an SQL command parser with syntax error checking
 \end{itemize}
 
 \resumesection{Sushi Shop}{Developer}{May 2017}
