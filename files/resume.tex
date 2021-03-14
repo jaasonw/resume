@@ -3,8 +3,9 @@
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 \usepackage{fontspec}
-\usepackage[margin = 0.5in]{geometry}
+\usepackage[margin = 0.4in]{geometry}
 \usepackage{hyperref}
+\usepackage{multicol}
 \usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{xcolor}
@@ -65,14 +66,22 @@
 \pagestyle{useheader}
 
 \section*{Education}
-\resumesection{California State University, Fullerton}{}{Computer Science, B.S. \& Minor in Mathematics, Expected 2022}
-\begin{itemize}
-    \item \textbf{Coursework}: File Structures \& Database Systems, Computer Organization
-\end{itemize}
-\resumesection{Pasadena City College}{}{Mathematics, AS-T, 2020}
-\begin{itemize}
-    \item \textbf{Coursework}: Data Structures, Unix Scripting, Discrete Mathematics
-\end{itemize}
+\resumesection{Computer Science, B.S. \& Minor in Mathematics}{California State University, Fullerton}{June 2022}
+\resumesection{Mathematics, AS-T}{Pasadena City College}{June 2020}
+\\
+\section*{Coursework}
+\setlength{\multicolsep}{0pt}
+\begin{multicols}{2}
+    \noindent
+    \begin{itemize}
+        \item File Structures \& Database Systems
+        \item Computer Organization
+        \item Data Structures
+        \item Unix Scripting
+        \item Discrete Mathematics
+        \item Object-Oriented Programming
+    \end{itemize}
+\end{multicols}
 \hfill
 \section*{Skills}
 \textbf{Languages}: Python, C++, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R\\
@@ -80,7 +89,7 @@
 \textbf{Tools/Software}: git, Unix/Linux, AWS, Google Cloud Platform, SQLite
 \\
 \section*{Projects}
-\resumesection{Spotify Seasonal Playlist Sorter | Python}{Developer}{April 2020}
+\resumesection{Spotify Seasonal Playlist Sorter | Python}{}{April 2020}
 \begin{itemize}
     \item Worked in a team to develop a web app that places liked songs on Spotify into playlists grouped by seasons
     \item Developed and designed the frontend and deployed the app onto an AWS EC2 instance
@@ -88,20 +97,20 @@
     \item Used the Spotify REST API and Flask
 \end{itemize}
 
-\resumesection{APPE Regional Draft Analysis | Python}{Developer}{January 2021}
+\resumesection{APPE Regional Draft Analysis | Python}{}{January 2021}
 \begin{itemize}
     \item Monte Carlo simulation to forecast the probability of 
-        pharmacy students getting their preferred region for their APPE rotations
+        pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations
 \end{itemize}
 
-\resumesection{SQL Relational Database System | C++}{Developer}{June 2019}
+\resumesection{SQL Relational Database System | C++}{}{June 2019}
 \begin{itemize}
     \item Developed a relational database management system that supports a subset of SQL commands
     \item Implemented a B+Tree to index database entries for fast querying
     \item Implemented an SQL command parser with syntax error checking
 \end{itemize}
 
-\resumesection{Sushi Shop | Java}{Developer}{May 2017}
+\resumesection{Sushi Shop | Java}{}{May 2017}
 \begin{itemize}
     \item Led a team to develop a sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
 \end{itemize}
@@ -126,8 +135,7 @@
 \section*{Leadership}
 \resumesection{She.Codes}{Webmaster, Treasurer}{September 2019 - June 2020}
 \begin{itemize}
-    \item A club at PCC that aims to create a community for women in the tech industry
-    \item Wrote and sent weekly newsletters to club members
+    \item A club at Pasadena City College that aims to create a community for women in the tech industry
     \item Hosted a workshop introducing members to the basics of git and version control
     \item Designed and maintained the club website
 \end{itemize}
