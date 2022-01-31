@@ -3,7 +3,7 @@
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 \usepackage{fontspec}
-\usepackage[margin = 0.6in]{geometry}
+\usepackage[margin = 0.65in]{geometry}
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{setspace}
@@ -30,7 +30,7 @@
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
 \titleformat{\subsection}[runin]{}{}{}{\large \textbf}[\normalsize]
-\titleformat{\section}{\color{csufblue}\normalfont\large\bfseries}{\color{csufblue}}{1em}{}
+\titleformat{\section}{\color{csufblue}\normalfont\Large\bfseries}{\color{csufblue}}{1em}{}
 \addtolength{\topmargin}{\headerheight{}}
 \hypersetup{colorlinks, linkcolor = csufgrey, urlcolor = csufgrey}
 \hyphenpenalty 10000
@@ -69,57 +69,33 @@
 % \resumesection{California State University, Fullerton}{Computer Science, B.S. \& Minor in Mathematics}{June 2020}
 \resumesection{Computer Science, B.S. \& Minor in Mathematics}{California State University, Fullerton}{June 2023}%
 \resumesection{Mathematics, AS-T}{Pasadena City College}{June 2020}
-\section*{Coursework}
-\setlength{\multicolsep}{0pt}
-\begin{multicols}{2}
-    \noindent
-    \begin{itemize}
-        \item Operating Systems
-        \item Software Engineering
-        \item File Structures \& Database Systems
-        \item Data Structures \& Algorithms
-        \item Compilers \& Languages
-        \item Computer Security
-    \end{itemize}
-\end{multicols}
-\hfill
+% \section*{Coursework}
+% \setlength{\multicolsep}{0pt}
+% \begin{multicols}{2}
+%     \noindent
+%     \begin{itemize}
+%         \item Operating Systems
+%         \item Software Engineering
+%         \item File Structures \& Database Systems
+%         \item Data Structures \& Algorithms
+%         \item Compilers \& Languages
+%         \item Computer Security
+%     \end{itemize}
+% \end{multicols}
+% \newline
 \section*{Skills}
 \textbf{Languages}: Python, C++, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R, MATLAB\\
 \textbf{Frontend/Mobile}: React, Next.js, Gatsby, Three.js, React Native, Flutter\\
-\textbf{Backend/DevOps}: Express.js, Flask, Node.js, Docker, PostgreSQL, SQLite, NGINX\\
-\section*{Projects}
-\resumesection{Portfolio Website | Javascript}{}{July 2021}
-\begin{itemize}
-    \item Developed a website following mobile responsive design practices to showcase some of my work
-    \item Built from scratch using React.js, ChakraUI, and Framer Motion and deployed on Netlify
-\end{itemize}
-\resumesection{Spotify Seasonal Playlist Sorter | Python}{}{April 2020}
-\begin{itemize}
-    \item Co-developed a web app using Flask and the Spotify API that places liked songs into playlists grouped by seasons
-    \item Developed and designed the frontend and deployed the app onto an AWS EC2 instance
-    \item Added a SQLite database to manage user data and playlists
-\end{itemize}
-
-\resumesection{SQLite Clone | C++}{}{June 2019}
-\begin{itemize}
-    \item Developed a relational database management system that supports a subset of SQL commands
-    \item Implemented a B+Tree to index database entries for fast querying
-    \item Implemented an SQL command parser with syntax error checking
-\end{itemize}
-
-\resumesection{Sushi Shop | Java}{}{May 2017}
-\begin{itemize}
-    \item Led a team to develop a sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
-\end{itemize}
-\hfill
-\section*{Work Experience}
+\textbf{Backend/DevOps}: Express.js, Flask, Node.js, Docker, PostgreSQL, SQLite, NGINX
+\section*{Experience}
 % \resumesection{Amazon}{Software Development Intern}{May 2022}
-\resumesection{TuffyHacks}{Frontend Developer}{September 2021 - Present}
+\resumesection{TuffyHacks}{Technology Officer}{September 2021 - Present}
 \begin{itemize}
     \item Built the hackathon landing page and the hacker portal for project submissions and team creation
     \item Refactored the codebase to follow responsive design practices
     \item Worked closely with the design team to provide an effective user experience
-    \item Used Next.js, Node.js, PostgreSQL, and hosted on Vercel
+    \item Replaced the Firestore database with a PostgreSQL database allowing us to scale to our 300 user target while reducing our effective hosting costs to \$0
+    \item Used Next.js, Node.js, PostgreSQL, Firebase Auth, and hosted on Vercel
 \end{itemize}
 \resumesection{Nex-ii LLC, Twiine}{Full Stack Developer, twiine.com}{June 2020 - September 2020}
 \begin{itemize}
@@ -134,7 +110,33 @@
     \item Worked with professors as TA for 3 courses to help improve lectures and build long term study habits within students
     \item Assisted and advised staff on the transition to remote tutoring during the COVID-19 pandemic
 \end{itemize}
-\hfill
+% \hfill
+\section*{Projects}
+\resumesection{Portfolio Website}{Javascript}{July 2021}
+\begin{itemize}
+    \item Developed a website following mobile responsive design practices to showcase some of my work
+    \item Built from scratch using React.js, ChakraUI, and Framer Motion and deployed on Netlify
+\end{itemize}
+\resumesection{Spotify Seasonal Playlist Sorter}{Python}{April 2020}
+\begin{itemize}
+    \item Co-developed a web app using Flask and the Spotify REST API that places liked songs into playlists grouped by seasons
+    \item Developed and designed the frontend and deployed the app onto an AWS EC2 instance
+    \item Designed the SQLite database allowing for per user error logging, token storage, and playlist caching, minimizing API calls
+\end{itemize}
+
+\resumesection{SQLite Clone}{C++}{June 2019}
+\begin{itemize}
+    \item Developed a relational database management system that supports a subset of SQL commands
+    \item Implemented a B+Tree to index database entries for fast querying
+    \item Implemented an SQL command parser with syntax error checking
+\end{itemize}
+
+\resumesection{Sushi Shop}{Java}{May 2017}
+\begin{itemize}
+    \item Led a team to develop a sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
+    \item Developed the graphics engine using the Java Swing and JavaFX libraries
+\end{itemize}
+% \newline
 \section*{Leadership}
 \resumesection{CSUF Association of Chinese Students}{Treasurer}{May 2021 - Present}
 \resumesection{PCC She.Codes}{Webmaster, Treasurer}{September 2019 - June 2020}
@@ -142,7 +144,7 @@
 %     \item A club at Pasadena City College that aims to create a community for women in the tech industry
 %     \item Hosted a workshop introducing members to the basics of git and version control
 % \end{itemize}
-\hfill
+% \hfill
 
 
 \end{document}
