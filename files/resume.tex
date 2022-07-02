@@ -67,7 +67,7 @@
 
 \section*{Education}
 % \resumesection{California State University, Fullerton}{Computer Science, B.S. \& Minor in Mathematics}{June 2020}
-\resumesection{Computer Science, B.S. \& Minor in Mathematics}{California State University, Fullerton}{June 2023}%
+\resumesection{B.S. Computer Science, \& Minor in Mathematics}{California State University, Fullerton}{June 2023}%
 \resumesection{Mathematics, AS-T}{Pasadena City College}{June 2020}
 % \section*{Coursework}
 % \setlength{\multicolsep}{0pt}
@@ -83,67 +83,77 @@
 %     \end{itemize}
 % \end{multicols}
 % \newline
-\section*{Skills}
-\textbf{Languages}: Python, C++, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R, MATLAB\\
-\textbf{Frontend/Mobile}: React (Next.js, Gatsby), Svelte, Three.js, React Native, Flutter\\
-\textbf{Backend/DevOps}: Express.js, Flask/FastAPI, Node.js, Docker, PostgreSQL, SQLite, MySQL, NGINX, Github Actions
 \section*{Experience}
-% \resumesection{Amazon Consumer Division}{Software Development Intern}{May 2022 - Present}
-% \begin{itemize}
-%     \item Test
-% \end{itemize}
-\resumesection{TuffyHacks}{Technology Officer}{September 2021 - Present}
+\resumesection{Amazon, Consumer Division: Customer Interests}{Software Development Intern}{May 2022 - August 2022}
+\begin{itemize}
+    \item Developed an API to store labeled interest mapping data from AWS Ground Truth to evaluate the accuracy of our neural networks, saving \$500 - \$2000 per week in data labeling costs
+    \item Integrated the API with Ground Truth to automate the dataset caching in response to a completed labeling job
+    \item Designed and implemented a DynamoDB schema to store and query labled datasets
+    \item Configured the CI/CD pipeline and provisioned AWS resources using CloudFormation and CDK 
+    \item Participated in scum meetings to discuss sprint updates, blockers, retrospectives, and future plans
+\end{itemize}
+\resumesection{TuffyHacks 2022}{Technology Officer}{September 2021 - February 2022}
 \begin{itemize}
     \item Built a mobile responsive hackathon landing page to promote the event, reaching 1000+ students globally 
     \item Developed the hacker dashboard for participants to join and create teams
     % \item Worked closely with the design team to provide an effective user experience
     \item Designed a PostgreSQL database to replace the Firestore database, allowing us to scale to our 300 user target while reducing our effective hosting costs to \$0
     \item Created API endpoints using serverless functions, allowing hackers to create and join teams via invite link
-    \item Used Next.js, Node.js, PostgreSQL, and Firebase Auth. Hosted on Vercel
+    % \item Used Next.js, Node.js, PostgreSQL, and Firebase Auth. Hosted on Vercel
 \end{itemize}
-\resumesection{Nex-ii LLC, Twiine}{Full Stack Developer, twiine.com}{June 2020 - September 2020}
+\resumesection{Nex-ii LLC, Twiine}{Full Stack Developer}{June 2020 - September 2020}
 \begin{itemize}
-    \item Built a planning and user profile page on the mobile app with support for live updates
+    \item Built a planning and user profile page on the Flutter mobile app with support for live updates
     \item Developed the backend login and signup flow with OAuth support for Google, Facebook, and Email authentication
     \item Designed and implemented the API allowing users to schedule hangouts and send invitations to other users
-    \item Used Flutter, Node.js, and Python on Firebase
 \end{itemize}
 \resumesection{PCC Learning Assistance Center}{Computer Science Learning Assistant}{January 2019 - December 2020}
 \begin{itemize}
-    \item Worked one-on-one with 40+ students for over 150 sessions to teach computer science concepts and debugging techniques
-    \item Worked with professors as TA for 3 courses to help improve lectures and build long term study habits within students
-    \item Assisted and advised staff on the transition to remote tutoring during the COVID-19 pandemic
+    \item Worked one-on-one with 40+ students for 150+ sessions to teach computer science concepts
+    \item Served as TA for 3 courses to help improve lectures and build long term study habits within students
+    % \item Assisted and advised staff on the transition to remote tutoring during the COVID-19 pandemic
 \end{itemize}
 % \hfill
 \section*{Projects}
-\resumesection{Portfolio Website}{Javascript}{July 2021}
+% \resumesection{Portfolio Website}{Javascript}{July 2021}
+% \begin{itemize}
+%     \item Developed a website following mobile responsive design practices to showcase some of my work
+%     \item Built from scratch using React on Next.js, ChakraUI, and Framer Motion and deployed on Netlify
+% \end{itemize}
+\resumesection{ACM at CSUF Website}{Javascript (Svelte)}{April 2022}
 \begin{itemize}
-    \item Developed a website following mobile responsive design practices to showcase some of my work
-    \item Built from scratch using React on Next.js, ChakraUI, and Framer Motion and deployed on Netlify
+    \item Developed features on the blog including read time estimates and syntax highlighting on code blocks
+    \item Wrote articles on the blog, educating members about topics not frequently taught in classes
+    \item Performed code reviews and provided feedback on pull requests from other project contributors, ensuring a high quality codebase and teaching web development best practices
 \end{itemize}
-\resumesection{Spotify Seasonal Playlist Sorter}{Python}{April 2020}
+\resumesection{Spotify Seasonal Playlist Sorter}{Python (Flask, Spotify REST API)}{April 2020}
 \begin{itemize}
-    \item Co-developed a web app using Flask and the Spotify REST API that places liked songs into playlists grouped by seasons
+    \item Co-developed a web app that places liked songs into playlists grouped by seasons
     \item Developed and designed the frontend and deployed the app onto an AWS EC2 instance
-    \item Designed a SQLite database allowing for per user error logging, token storage, and playlist caching, minimizing API calls
+    \item Designed a SQLite database allowing for error logging, token storage, and playlist caching, minimizing API calls
 \end{itemize}
 
-\resumesection{SQLite Clone}{C++}{June 2019}
-\begin{itemize}
-    \item Developed a relational database management system that supports a subset of SQL commands
-    \item Implemented a B+Tree to index database entries for fast querying
-    \item Implemented an SQL command parser with syntax error checking
-\end{itemize}
+% \resumesection{SQLite Clone}{C++}{June 2019}
+% \begin{itemize}
+%     \item Developed a relational database management system that supports a subset of SQL commands
+%     \item Implemented a B+Tree to index database entries for fast querying
+%     \item Implemented an SQL command parser with syntax error checking
+% \end{itemize}
 
-\resumesection{Sushi Shop}{Java}{May 2017}
+\resumesection{Sushi Shop}{Java (Swing, JavaFX)}{May 2017}
 \begin{itemize}
     \item Led a team to develop a sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
-    \item Developed the graphics engine using the Java Swing and JavaFX libraries
+    \item Developed the graphics engine capable of rendering simple 2D sprites
 \end{itemize}
 % \newline
+\section*{Skills}
+\textbf{Languages}: Python, C++, Java, JavaScript/TypeScript, HTML/CSS, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R, MATLAB\\
+\textbf{Frontend/Mobile}: React (Next.js, Gatsby), Svelte, Three.js, React Native, Flutter\\
+\textbf{Backend}: Express.js, Flask/FastAPI, Node.js, Docker, PostgreSQL, SQLite, MySQL\\
+\textbf{DevOps}: Amazon Web Services (API Gateway, CDK, CloudFormation, DynamoDB, Lambda, S3), Docker, NGINX
 \section*{Leadership}
 \resumesection{CSUF Association for Computing Machinery (ACM)}{Historian}{February 2022 - Present}
-\resumesection{CSUF Association of Chinese Students}{Treasurer}{May 2021 - Present}
+% \resumesection{CSUF Association of Chinese Students}{Treasurer}{May 2021 - May 2022}
 \resumesection{PCC She.Codes}{Webmaster, Treasurer}{September 2019 - June 2020}
 
 
