@@ -16,13 +16,13 @@
 \def\github{\href{https://github.com/jaasonw/}{jaasonw}}
 \def\linkedin{\href{https://www.linkedin.com/in/wayson/}{wayson}}
 \def\website{\href{http://jason-wong.me/}{jason-wong.me}}
-\def\email{\href{mailto:wayson@csu.fullerton.edu}{wayson@csu.fullerton.edu}}
+\def\email{\href{mailto:jayywong92@gmail.com}{jayywong92@gmail.com}}
 
 % config
 \definecolor{wordblue}{RGB}{68,114,196}
 \definecolor{wordgrey}{RGB}{89,89,89}
 \definecolor{csufblue}{RGB}{0,89,162}
-\definecolor{csufgrey}{RGB}{85,85,85}
+\definecolor{grey}{RGB}{125,125,125}
 \def\headerheight{15pt}
 \setlist{nolistsep}
 \setmainfont[BoldFont={Cambria Bold}]{Cambria}
@@ -32,7 +32,7 @@
 \titleformat{\subsection}[runin]{}{}{}{\large \textbf}[\normalsize]
 \titleformat{\section}{\color{csufblue}\normalfont\Large\bfseries}{\color{csufblue}}{1em}{}
 \addtolength{\topmargin}{\headerheight{}}
-\hypersetup{colorlinks, linkcolor = csufgrey, urlcolor = csufgrey}
+\hypersetup{colorlinks, linkcolor = grey, urlcolor = grey}
 \hyphenpenalty 10000
 \exhyphenpenalty 10000
 
@@ -42,7 +42,7 @@
     \ 
     \ 
     \small
-    \textcolor{csufgrey}{#2}
+    \textcolor{grey}{\emph{#2}}
     \normalsize
     \hfill
     \textcolor{black}{#3}
@@ -56,7 +56,7 @@
     \setlength{\headheight}{\headerheight{}}
     \chead{
         \huge{\textbf{\textcolor{csufblue}{\first{} \last{}}}}\\
-        \small{\textcolor{csufgrey}{
+        \small{\textcolor{grey}{
             \faGithub \ \github{}  |  \faLinkedin \ \linkedin{}}  |  \faGlobe \ \website{} |  \faEnvelope \ \email{}
         }
     }
@@ -84,7 +84,7 @@
     \item Design and develop complex systems that process thousands of data points to create high confidence "golden datasets"
     \item Train, analyze, and improve model performance resulting in reduced overhead and minimizing data labeling costs
     \item Develop automations to process, transform, and upload labeling data in response to a completed Ground Truth job
-    \item Parallelized dataset uploads with multithreaded insertions, increasing upload performance
+    \item Parallelized dataset uploads with multithreaded insertions, increasing upload performance and throughput
     \item Design and implement a DynamoDB schema to store and query labeled datasets
     \item Implement unit and integration tests with 100\% branch and statement coverage where applicable
     \item Configure and deploy the CI/CD infrastructure in TypeScript through AWS CDK and CloudFormation
@@ -101,7 +101,7 @@
 \resumesection{TuffyHacks 2022}{Website Developer}{September 2021 - February 2022}
 \begin{itemize}
     \item Built mobile responsive web frontends, primarily the landing page, promoting the event to thousands of students, and the dashboard, facilitating team creation and displaying live event announcements
-    \item Design scaleable and fault tolerant backend using serverless technologies and a PostgreSQL database, staying within cloud computing free tiers, effortlessly handling peak traffic during the event
+    \item Design scaleable and fault tolerant backend using serverless technologies and a PostgreSQL database, staying within cloud computing free tiers, effortlessly handling peak traffic from hundreds of users with 100\% uptime during the event
           % \item Worked closely with the design team to provide an effective user experience
           % \item Designed a PostgreSQL database to replace the Firestore database, allowing us to scale to our 300 user target while reducing our effective hosting costs to \$0
           % \item Created API endpoints using serverless functions, allowing hackers to create and join teams via invite link
@@ -111,7 +111,7 @@
 \begin{itemize}
     \item Built the MVP of a date and hangout planning mobile app using Flutter. Most notably, developed the planning and user profile pages, with support for live updates when requests are accepted and profiles are updated
           % \item Built a planning and user profile page on the Flutter mobile app with support for live updates
-    \item Develop login and signup flow with OpenID/OAuth support for Google, Facebook, and Email authentication
+    \item Develop login and signup flow with OpenID and OAuth support for Google, Facebook, and Email authentication
     \item Design and implement the API endpoints allowing users to schedule hangouts and send invitations to other users
 \end{itemize}
 \resumesection{Pasadena City College, Learning Assistance Center}{Learning Assistant}{January 2019 - December 2020}
