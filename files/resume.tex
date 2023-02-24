@@ -85,27 +85,27 @@
 \section*{Experience}
 \resumesection{Amazon, Personalization}{Software Development Engineer Intern}{May 2022 - August 2022}
 \begin{itemize}
-    \item Design and develop systems that process thousands of data points to create high confidence "golden datasets"
+    \item Develop systems that process thousands of labeled binary data points to create high confidence datasets
     \item Train, analyze, and improve model performance resulting in reduced overhead and minimizing data labeling costs
-    \item Develop automations to process, transform, and upload labeling data in response to a completed Ground Truth job
-    \item Parallelized dataset uploads with multithreaded insertions, increasing upload performance and throughput
+          % \item Develop automations to process, transform, and upload labeling data in response to a completed Ground Truth job
+          % \item Parallelized dataset uploads with multithreaded insertions, increasing upload performance and throughput
     \item Design and implement a DynamoDB schema to store and query labeled datasets
     \item Implement unit and integration tests with 100\% branch and statement coverage where applicable
     \item Configure and deploy the CI/CD infrastructure in TypeScript through AWS CDK and CloudFormation
           % \item Configure a CI/CD pipeline for automated deployments and provisioned AWS resources using CloudFormation
 \end{itemize}
-\resumesection{Association for Computing Machinery at CSUF}{Historian, Website Developer}{April 2021 - Present}
+\resumesection{Association for Computing Machinery at CSUF}{Historian, Website Developer}{April 2021 - December 2022}
 \begin{itemize}
     \item Serve as official board member for the largest Computer Science club on campus
     \item Develop useful features for blog entries including read time estimates and syntax highlighting on code blocks
     \item Construct informative articles informing students about complex topics not frequently taught in classes
-    \item Perform thoughtful code review by giving meaningful feedback and inciting discussion on Web Development best practices
+          % \item Perform thoughtful code review by giving meaningful feedback and inciting discussion on Web Development best practices
     \item Mentor budding developers by writing useful documentation and providing helpful pointers
 \end{itemize}
 \resumesection{TuffyHacks 2022}{Website Developer}{September 2021 - February 2022}
 \begin{itemize}
-    \item Built mobile responsive web frontends using React.js, primarily the landing page, promoting the event to thousands of students, and the dashboard, facilitating team creation and displaying live event announcements
-    \item Design scalable and fault tolerant backend using serverless technologies and a PostgreSQL database, staying within cloud computing free tiers while effortlessly handling peak traffic from hundreds of users with 100\% uptime during the event
+    \item Built mobile responsive frontend using React (Next.js), primarily the landing page, promoting the event to thousands of students globally, and the dashboard, facilitating team creation and displaying live event announcements
+    \item Design scalable and fault tolerant backend using AWS Lambda functions and a PostgreSQL database, minimizing cloud hosting fees while handling peak traffic from hundreds of users with 100\% uptime and minimal latency during the event
           % \item Worked closely with the design team to provide an effective user experience
           % \item Designed a PostgreSQL database to replace the Firestore database, allowing us to scale to our 300 user target while reducing our effective hosting costs to \$0
           % \item Created API endpoints using serverless functions, allowing hackers to create and join teams via invite link
@@ -141,23 +141,29 @@
 %     \item Currently serves the ACM at CSUF discord server of 1000+ members
 % \end{itemize}
 
-\resumesection{Pathfinder}{Javascript (Svelte, TailwindCSS)}{December 2022}
+\resumesection{PositivityPost | Treehacks 2023 Submission}{Typescript, Svelte, TailwindCSS}{February 2023}
 \begin{itemize}
-    \item Develop an interactive web app that demonstrates and compares the realtime performance of various different pathfinding algorithms, allowing users to see how they work and understand their strengths and limitations.
+    \item Website that aggregates news from multiple sources and categorizes each article as "positive" or "negative"
+    \item Implement the sentiment analysis algorithm to classify news with a "sentiment score" using the AFINN-165 lexicon
+    \item Design user-friendly frontend allowing users to quickly filter and tailor their news feed based on topics and sentiments
+\end{itemize}
+\resumesection{Pathfinder}{Typescript, Svelte, TailwindCSS}{December 2022}
+\begin{itemize}
+    \item Interactive web app that demonstrates and compares the realtime performance of various different pathfinding algorithms, allowing users to see how they work and understand their strengths and limitations.
     \item Implement visualizations for Depth-First Search, Breadth-First Search, Dijkstra's Algorithm, and A* Search Algorithm
     \item Create fluid CSS animations to better visualize the progression of each algorithm
 \end{itemize}
 
-\resumesection{Spam Email Classifier}{Python (Scikit-Learn, Natural Language Toolkit)}{November 2022}
+\resumesection{Spam Email Classifier}{Python, Scikit-Learn, Natural Language Toolkit}{November 2022}
 \begin{itemize}
     \item Design and implement a machine learning based spam email classifier using Python and scikit-learn
-    \item Trained the classifier on a dataset of labeled emails, achieving a precision of 98.2\% and a recall of 97.3\% on the testing dataset using the Naive Bayes Classifier
+    \item Train model on a dataset of labeled emails, achieving a precision of 98\% and a recall of 97\% with the Naive Bayes Classifier
 \end{itemize}
 
-\resumesection{Spotify Seasonal Playlist Sorter}{Javascript, Python (Flask, Spotify REST API)}{April 2020}
+\resumesection{Spotify Seasonal Playlist Sorter}{Javascript, Python, Flask, Spotify REST API}{April 2020}
 \begin{itemize}
-    \item Co-develop a web service that places liked songs into playlists grouped by seasons, currently serving 20+ users
-    \item Develop and design a landing page and deployed the app onto AWS Lambda functions
+    \item Develop a service that places liked songs into playlists grouped by seasons, currently serving 20+ users
+          % \item Develop and design a landing page and deployed the app onto AWS Lambda functions
     \item Integrate with a SQL database for error logging and playlist caching, minimizing API calls and monitoring error rates
           % \item Rebuilt the service with serverless technologies, reducing maintenance and eliminating hosting fees
 \end{itemize}
@@ -181,10 +187,10 @@
 % \resumesection{PCC She.Codes}{Webmaster, Treasurer}{September 2019 - June 2020}
 \section*{Skills}
 \textbf{Languages}: JavaScript/TypeScript, HTML/CSS, Python, C++, Java, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R, MATLAB\\
-\textbf{Frontend}: React (Next.js, Gatsby), Svelte, TailwindCSS, SCSS, 11ty\\
+\textbf{Frontend}: React (Next.js, Gatsby), Svelte, Figma, TailwindCSS, SCSS, 11ty\\
 \textbf{Backend}: Express.js, Flask, FastAPI, Node.js, PostgreSQL, SQLite, MySQL, Prisma\\
+\textbf{Data Analysis/Machine Learning}: Jupyter Notebook, Scikit-Learn, Numpy, Pandas, Pytorch, Keras\\
 \textbf{DevOps}: Amazon Web Services (API Gateway, CDK, CloudFormation, DynamoDB, Lambda, S3), Firebase, Docker, NGINX\\
-\textbf{Data Analysis/Machine Learning}: Jupyter Notebook, Scikit-Learn, Numpy, Pandas, Pytorch, Keras
 % \textbf{Mobile}: React Native, Flutter\\
 
 \end{document}
