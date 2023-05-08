@@ -1,0 +1,33 @@
+name: Build and Copy Resume to Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: miktex/miktex:latest
+      volumes:
+        - miktex:/miktex/.miktex
+        - `pwd`/files:/miktex/work
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Build
+      run: lualatex resume.tex
+
+    - name: Pushes resume to website
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'resume.pdf'
+        destination_repo: 'jaasonw/jason-wong.me'
+        destination_folder: 'resume'
+        user_email: 'noreply@github.com'
+        user_name: 'github-action'
+        commit_message: 'A custom message for the commit'
