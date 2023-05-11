@@ -23,6 +23,8 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Pushes resume to website
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
