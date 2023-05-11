@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build:
+  Build Check:
     runs-on: ubuntu-latest
     container:
       image: texlive/texlive:latest
@@ -20,12 +20,15 @@ jobs:
         run: ls -la
       - name: Build
         run: lualatex resume.tex -o resume.pdf
+  Upload To Website:
+    runs-on: ubuntu-latest
+    steps:
       - name: Pushes resume to website
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: "files/resume.pdf"
+          source_file: "resume.pdf"
           destination_repo: "jaasonw/jason-wong.me"
           destination_folder: "files"
           destination_branch: "master"
