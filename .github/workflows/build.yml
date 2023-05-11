@@ -12,7 +12,6 @@ jobs:
     container:
       image: texlive/texlive:latest
       volumes:
-        # - miktex:/miktex/.miktex
         - ${{ github.workspace }}:/usr/src/app
     steps:
       - name: Checkout
@@ -28,7 +27,7 @@ jobs:
         with:
           source_file: "files/resume.pdf"
           destination_repo: "jaasonw/jason-wong.me"
-          destination_folder: "resume"
+          destination_folder: "files"
           destination_branch: "master"
           user_email: "noreply@github.com"
           user_name: "github-action"
