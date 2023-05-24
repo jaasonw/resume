@@ -22,7 +22,7 @@
 \definecolor{wordblue}{RGB}{68,114,196}
 \definecolor{wordgrey}{RGB}{89,89,89}
 \definecolor{csufblue}{RGB}{0,89,162}
-\definecolor{grey}{RGB}{125,125,125}
+\definecolor{grey}{RGB}{75, 85, 99}
 \def\headerheight{15pt}
 \setlist{nolistsep}
 % \setmainfont{Cambria.ttf}
@@ -41,13 +41,17 @@
 \newcommand{\resumesection}[3]{
     \subsection*{#1}
     \ 
-    \ 
-    \small
-    \textcolor{grey}{\emph{#2}}
+    % \small
+    % \textcolor{grey}{\emph{#2}}
+    \normalsize
+    % \textcolor{black}{\emph{#2}}
     \normalsize
     \hfill
     \textcolor{black}{#3}
     \normalsize
+    \newline
+    \small
+    \textcolor{grey}{\emph{#2}}
 }
 
 
@@ -67,8 +71,8 @@
 \pagestyle{useheader}
 \section*{Education}
 % \resumesection{California State University, Fullerton}{Computer Science, B.S. \& Minor in Mathematics}{June 2020}
-\resumesection{B.S. Computer Science \& Minor in Mathematics}{California State University, Fullerton}{May 2023}
-\resumesection{A.S. Mathematics}{Pasadena City College}{May 2020}
+\resumesection{B.S. Computer Science \& Minor in Mathematics}{California State University, Fullerton}{August 2020 - May 2023}
+% \resumesection{A.S. Mathematics}{Pasadena City College}{May 2020}
 % \section*{Coursework}
 % \setlength{\multicolsep}{0pt}
 % \begin{multicols}{2}
@@ -84,49 +88,51 @@
 % \end{multicols}
 % \newline
 \section*{Experience}
-\resumesection{Amazon, Personalization}{Software Development Engineer Intern}{May 2022 - August 2022}
+\resumesection{Software Development Engineer Intern}{Amazon, Personalization}{May 2022 - August 2022}
 \begin{itemize}
-    \item Develop systems that process thousands of labeled binary data points to create high confidence datasets
-    \item Train, analyze, and improve model performance resulting in reduced overhead and minimizing data labeling costs
+    % \item Develop systems that process thousands of labeled binary data points to create high confidence datasets
+    \item Develop internal tooling with \textbf{Python} that enables the Personalization team to efficiently convert thousands of binary data points from multiple labeling jobs into high confidence datasets to train and benchmark the performance of their machine learning models and recommendation algorithms
+          % \item Train, analyze, and improve model performance resulting in reduced overhead and minimizing data labeling costs
           % \item Develop automations to process, transform, and upload labeling data in response to a completed Ground Truth job
           % \item Parallelized dataset uploads with multithreaded insertions, increasing upload performance and throughput
-    \item Design and implement a DynamoDB database to store and query labeled datasets
+    \item Create an \textbf{AWS CDK} application in \textbf{TypeScript} to programmatically provision and configure resources, including \textbf{AWS Lambda} functions and \textbf{IAM} users to distribute read and write permissions
+    \item Design and implement a \textbf{DynamoDB} database to store and query labeled datasets
     \item Implement unit and integration tests with 100\% branch and statement coverage where applicable
-    \item Configure and deploy the CI/CD infrastructure in TypeScript through AWS CDK and CloudFormation
+          % \item Configure and deploy the CI/CD infrastructure in TypeScript through AWS CDK and CloudFormation
           % \item Configure a CI/CD pipeline for automated deployments and provisioned AWS resources using CloudFormation
 \end{itemize}
-\resumesection{Association for Computing Machinery at CSUF}{Historian, Website Developer}{April 2021 - December 2022}
+% \resumesection{Historian, Website Developer}{Association for Computing Machinery at CSUF}{April 2021 - December 2022}
+% \begin{itemize}
+%     \item Serve as official board member for the largest Computer Science club on campus
+%     \item Develop useful features for blog entries including read time estimates and syntax highlighting on code blocks
+%     % \item Construct informative articles informing students about complex topics not frequently taught in classes
+%           \item Perform thoughtful code review by giving meaningful feedback and inciting discussion on Web Development best practices
+%     \item Mentor budding developers by writing useful documentation and providing helpful pointers
+% \end{itemize}
+\resumesection{Web Frontend Developer}{TuffyHacks 2022}{September 2021 - February 2022}
 \begin{itemize}
-    \item Serve as official board member for the largest Computer Science club on campus
-    \item Develop useful features for blog entries including read time estimates and syntax highlighting on code blocks
-    \item Construct informative articles informing students about complex topics not frequently taught in classes
-          % \item Perform thoughtful code review by giving meaningful feedback and inciting discussion on Web Development best practices
-    \item Mentor budding developers by writing useful documentation and providing helpful pointers
-\end{itemize}
-\resumesection{TuffyHacks 2022}{Website Developer}{September 2021 - February 2022}
-\begin{itemize}
-    \item Built mobile responsive frontend using React (Next.js), primarily the landing page, promoting the event to thousands of students globally, and the dashboard, facilitating team creation and displaying live event announcements
-    \item Design scalable and fault tolerant backend using AWS Lambda functions and a PostgreSQL database, minimizing cloud hosting fees while handling peak traffic from hundreds of users with 100\% uptime and minimal latency during the event
+    \item Built mobile responsive frontend using \textbf{React (Next.js)}, primarily the landing page, promoting the event to thousands of students globally, and the dashboard, facilitating team creation and displaying live event announcements
+    \item Design scalable and fault tolerant backend using \textbf{AWS Lambda} functions and a \textbf{PostgreSQL} database, minimizing cloud hosting fees while handling peak traffic from hundreds of users with 100\% uptime and minimal latency during the event
           % \item Worked closely with the design team to provide an effective user experience
           % \item Designed a PostgreSQL database to replace the Firestore database, allowing us to scale to our 300 user target while reducing our effective hosting costs to \$0
           % \item Created API endpoints using serverless functions, allowing hackers to create and join teams via invite link
           % \item Used Next.js, Node.js, PostgreSQL, and Firebase Auth. Hosted on Vercel
 \end{itemize}
-\resumesection{Nex-ii LLC, Twiine}{Full Stack Developer}{June 2020 - September 2020}
+\resumesection{Mobile and Backend Developer}{Twiine}{June 2020 - September 2020}
 \begin{itemize}
-    \item Built the MVP of a date and hangout planning mobile app using Flutter. Most notably, developed the planning and user profile pages, with support for live updates when requests are accepted and profiles are updated
+    \item Built the MVP of a date and hangout planning mobile app using \textbf{Flutter}. Most notably, developed the planning and user profile view, with support for live updates when requests are accepted and profiles are updated
           % \item Built a planning and user profile page on the Flutter mobile app with support for live updates
-    \item Develop login and signup flow with OpenID and OAuth support for Google, Facebook, and Email authentication
+    \item Develop login and signup flow with \textbf{OpenID} and \textbf{OAuth} support for Google, Facebook, and Email authentication
     \item Design and implement the API endpoints allowing users to schedule hangouts and send invitations to other users
 \end{itemize}
-% \resumesection{Pasadena City College, Learning Assistance Center}{Learning Assistant}{January 2019 - December 2020}
-% \begin{itemize}
-%     \item Work one-on-one with students over hundreds of sessions, designing creative and intuitive lectures, providing insights to a variety of complex Computer Science topics
-%           % \item Work one-on-one with students over hundreds of sessions to teach computer science concepts
-%           % \item Design creative and intuitive lectures, providing insights on complex topics
-%     \item Serve as TA for multiple courses, working closely with professors and stakeholders to improve lectures, building and reinforcing long term study habits within students
-%           % \item Assisted and advised staff on the transition to remote tutoring during the COVID-19 pandemic
-% \end{itemize}
+\resumesection{Computer Science Learning Assistant}{Pasadena City College}{January 2019 - December 2020}
+\begin{itemize}
+    \item Work one-on-one with students over hundreds of sessions, designing creative and intuitive lectures, providing insights to a variety of complex Computer Science topics
+          % \item Work one-on-one with students over hundreds of sessions to teach computer science concepts
+    \item Design creative and intuitive lectures, providing insights on complex topics
+    \item Serve as TA for multiple courses, working closely with professors to improve lectures, building and reinforcing long term study habits within students
+          % \item Assisted and advised staff on the transition to remote tutoring during the COVID-19 pandemic
+\end{itemize}
 % \hfill
 \section*{Projects}
 % \resumesection{Portfolio Website}{Javascript}{July 2021}
@@ -148,12 +154,12 @@
     \item Utilize sentiment analysis and language models to group and summarize coverage of newsworthy events
     \item Design user-friendly frontend allowing users to quickly filter and tailor their news feed based on topics and sentiments
 \end{itemize}
-\resumesection{Pathfinder}{Typescript, Svelte, TailwindCSS}{December 2022}
-\begin{itemize}
-    \item Interactive web app that demonstrates and compares the realtime performance of various different pathfinding algorithms, allowing users to see how they work and understand their strengths and limitations.
-    \item Implement visualizations for Depth-First Search, Breadth-First Search, Dijkstra's Algorithm, and A* Search Algorithm
-    \item Create fluid CSS animations to better visualize the progression of each algorithm
-\end{itemize}
+% \resumesection{Pathfinder}{Typescript, Svelte, TailwindCSS}{December 2022}
+% \begin{itemize}
+%     \item Interactive web app that demonstrates and compares the realtime performance of various different pathfinding algorithms, allowing users to see how they work and understand their strengths and limitations.
+%     \item Implement visualizations for Depth-First Search, Breadth-First Search, Dijkstra's Algorithm, and A* Search Algorithm
+%     \item Create fluid CSS animations to better visualize the progression of each algorithm
+% \end{itemize}
 
 \resumesection{Spam Email Classifier}{Python, Scikit-Learn, Natural Language Toolkit}{November 2022}
 \begin{itemize}
@@ -187,9 +193,8 @@
 % % \resumesection{CSUF Association of Chinese Students}{Treasurer}{May 2021 - May 2022}
 % \resumesection{PCC She.Codes}{Webmaster, Treasurer}{September 2019 - June 2020}
 \section*{Skills}
-\textbf{Languages}: JavaScript/TypeScript, HTML/CSS, Python, C++, Java, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R, MATLAB\\
-\textbf{Frontend}: React (Next.js, Gatsby), Svelte, Figma, TailwindCSS, SCSS, 11ty\\
-\textbf{Backend}: Express.js, Flask, FastAPI, Node.js, PostgreSQL, SQLite, MySQL, Prisma\\
+\textbf{Languages}: JavaScript/TypeScript, HTML/CSS, Python, C++, Rust, Java, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R, MATLAB\\
+\textbf{Web}: React, Next.js, Svelte, Figma, TailwindCSS, SCSS, 11ty, Express.js, Flask, FastAPI, Node.js, PostgreSQL, SQLite, MySQL\\
 \textbf{Data Analysis/Machine Learning}: Jupyter Notebook, Scikit-Learn, Numpy, Pandas, Pytorch, Keras\\
 \textbf{DevOps}: Amazon Web Services (API Gateway, CDK, CloudFormation, DynamoDB, Lambda, S3), Firebase, Docker, NGINX\\
 % \textbf{Mobile}: React Native, Flutter\\
