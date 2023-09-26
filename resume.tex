@@ -119,7 +119,7 @@
           % \item Parallelized dataset uploads with multithreaded insertions, increasing upload performance and throughput
     \item Create an \textbf{AWS CDK} application in \textbf{TypeScript} to\ programmatically provision and configure resources, including \textbf{AWS Lambda} functions, \textbf{DynamoDB} databases, and \textbf{IAM} users to distribute read and write permissions
           % \item Design and implement a \textbf{DynamoDB} database to store and query labeled datasets
-    \item Implement unit and integration tests with 100\% branch and statement coverage where applicable
+    \item Implement unit and integration tests in \textbf{Pytest} with 100\% branch and statement coverage where applicable
           % \item Configure and deploy the CI/CD infrastructure in TypeScript through AWS CDK and CloudFormation
           % \item Configure a CI/CD pipeline for automated deployments and provisioned AWS resources using CloudFormation
 \end{itemize}
@@ -147,7 +147,7 @@
     \item Spearheaded the development of the Minimum Viable Product (MVP) for a date and hangout planning mobile application using the \textbf{Flutter} framework
     \item Designed and implemented key app features, including the planning and user profile interfaces, incorporating real-time updates for request acceptances and profile changes
     \item Orchestrated a seamless user experience by crafting a secure and efficient login and signup flow, integrating \textbf{OpenID} and \textbf{OAuth} protocols for streamlined authentication via Google, Facebook, and Email
-    \item Implement the API endpoints to enable users to schedule hangouts and extend invitations to fellow users seamlessly
+    \item Implement \textbf{REST API} endpoints to enable users to schedule hangouts and extend invitations to fellow users seamlessly
 \end{itemize}
 % \resumesection{Computer Science Learning Assistant}{Pasadena City College, Learning Assistance Center}{January 2019 - December 2020}
 % \begin{itemize}
@@ -179,16 +179,24 @@
 \begin{itemize}
     \item Aggregates data from multiple job boards and curates a list of Software Engineering positions for entry level and intern job seekers
     \item Develop \textbf{ETL pipeline} using \textbf{Scrapy} and \textbf{BeautifulSoup} scrape and \textbf{Pandas} to transform data from job boards into a \textbf{SQL} database
-    \item Automatically parse and extract relevant information like technologies and years of experience and filter out irrelevant listings like non-technical positions and senior roles
+          % \item Automatically parse and extract relevant information like technologies and years of experience and filter out irrelevant listings like non-technical positions and senior roles
     \item Display data in a user-friendly frontend with \textbf{React} and \textbf{Tailwind}, allowing users to filter jobs based on location, salary, and more
+\end{itemize}
+
+\projectsection{Twofivefour}{Svelte, Typescript, TailwindCSS, OpenAI}{}
+\begin{itemize}
+    \item An \textbf{AI}-powered coding assistant to help developers understand and document their code by explaining code snippets, translating between programming languages, documenting functions, and calculating time complexity of functions
+    \item Develop a user-friendly frontend with \textbf{Svelte} and \textbf{Tailwind} that allows users to easily interact with the AI
+    \item Integrate with the \textbf{OpenAI} LLM APIs to generate code insights and translate between programming languages
+    \item Establish CI/CD pipeline with \textbf{GitHub Actions} and \textbf{Docker} to automatically deploy the app to a \textbf{Linux} server
 \end{itemize}
 
 \projectsection{Spotify Seasonal Playlist Creator}{Javascript, Python, Flask, Spotify REST API, Next.js, Docker Compose, NGINX}{}
 \begin{itemize}
     \item Develop a service that places liked songs into playlists grouped by seasons. Currently serving a user base of 20+ individuals
     \item Implement a multi-container architecture, utilizing \textbf{Docker Compose} to provision and configure infrastructure, including a \textbf{Flask} backend, \textbf{Next.js} frontend, and \textbf{SQLite} database with admin panel, behind an \textbf{NGINX} reverse proxy with SSL
-    \item Develop and design the landing page, OAuth login flow, and user dashboard in \textbf{Next.js} and \textbf{TailwindCSS}
-    \item Integrate with a \textbf{SQLite} database for error logging and playlist caching, minimizing API calls and monitoring error rates
+    \item Develop and design the landing page, OAuth login flow, and user dashboard in \textbf{React} and \textbf{Tailwind}
+          % \item Integrate with a \textbf{SQLite} database for error logging and playlist caching, minimizing API calls and monitoring error rates
 \end{itemize}
 % \projectsection{Gameboy Emulator}{Rust, SDL2, Z80 Assembly}{}
 % \begin{itemize}
@@ -208,12 +216,11 @@
 %     \item Implement visualizations for Depth-First Search, Breadth-First Search, Dijkstra's Algorithm, and A* Search Algorithm
 %     \item Create fluid CSS animations to better visualize the progression of each algorithm
 % \end{itemize}
-
-\projectsection{Spam Email Detection}{Python, Scikit-Learn, Natural Language Toolkit}{}
-\begin{itemize}
-    \item Design and implement a \textbf{machine learning} based spam email classifier using \textbf{Python} and \textbf{scikit-learn}
-    \item Train model on a dataset of labeled emails, achieving a precision of 98\% and a recall of 97\% with the Naive Bayes Classifier
-\end{itemize}
+% \projectsection{Spam Email Detection}{Python, Scikit-Learn, Natural Language Toolkit}{}
+% \begin{itemize}
+%     \item Design and implement a \textbf{machine learning} based spam email classifier using \textbf{Python} and \textbf{scikit-learn}
+%     \item Train model on a dataset of labeled emails, achieving a precision of 98\% and a recall of 97\% with the Naive Bayes Classifier
+% \end{itemize}
 
 
 % \resumesection{SQLite Clone}{C++}{June 2019}
