@@ -16,7 +16,7 @@
 \def\last{Wong}
 \def\github{\href{https://github.com/jaasonw/}{jaasonw}}
 \def\linkedin{\href{https://www.linkedin.com/in/wayson/}{wayson}}
-\def\website{\href{http://jason-wong.me/}{jason-wong.me}}
+\def\website{\href{http://jasonw.me/}{jasonw.me}}
 \def\email{\href{mailto:hi@jasonw.me}{hi@jasonw.me}}
 
 % redacted version
@@ -87,164 +87,54 @@
         }
     }
 }
-
 \begin{document}
 \pagestyle{useheader}
 \section*{Experience}
 \resumesection{IT Helpdesk Technician}{F\&A Credit Union}{December 2023 - Present}
 \begin{itemize}
-    \item Manage operations and configuration of a \textbf{Corelation Keystone} financial core, developing programs and scripts to automate routines and batch transaction postings
-    \item Develop custom reports and dashboards in \textbf{Jaspersoft} to provide insights on member activity, loan performance, and operational metrics
-    \item Develop mobile banking alerts and notifications service with \textbf{Python}, allowing members to receive real-time updates on card activity
-    \item Serve as technical lead on loan preapproval campaign, coordinating with credit bureaus and internal teams to generate personalized preapproval offers for members
-    \item Oversee critical IT infrastructure components including site-to-site VPN administration, and SAN replication
-    \item Administer and maintain \textbf{Active Directory} and \textbf{Azure AD (Microsoft Entra)} environments, including user and group policy management
-    % \item Create documentation detailing system configurations, network topologies, operational procedures, and troubleshooting steps
-    \item Develop automations using \textbf{Python}, \textbf{Powershell}, and \textbf{Ansible Playbooks} to streamline and optimize IT operations, including user provisioning, workstation and server configuration, and software installation
+	\item Manage operation and configuration of a \textbf{Corelation Keystone} financial core system; develop automations in \textbf{Python} and \textbf{Java} to handle batch transaction postings and routine processing/purge workflows
+	\item Develop \textbf{SQL} reports and dashboards in \textbf{Jaspersoft} to provide insights on member activity, loan performance, and operational metrics
+	\item Design and develop card transaction alerts platform in \textbf{Python} and \textbf{Twilio}, enabling members to receive real-time SMS/email notifications on card activity; system processes 10,000+ daily transactions with <2 second latency
+	      % \item Serve as technical lead on loan preapproval campaign, coordinating with credit bureaus, lending, and marketing departments to identify candidates and generate and offer personalized loan offers to members
+	      % \item Manage critical IT infrastructure components including \textbf{Cisco} firewall/VPN administration, site-to-site connectivity across multiple branch locations and data centers, and \textbf{SAN} replication for disaster recovery and business continuity
+	\item Manage and configure \textbf{Cisco ASA} firewalls, site-to-site VPN tunnels between branches, datacenters, and vendors, firewall rulesets, ACLs, \textbf{SAN} replication, and procedures for disaster recovery and business continuity
+	\item Perform network troubleshooting and diagnostics using tools such as tcpdump, traceroute, and netstat; maintain network documentation and monitor site-to-site VPN connectivity and SAN replication latency to maintain RTO/RPO targets
+	\item Administer and maintain \textbf{Active Directory} and \textbf{Microsoft Entra} environments, including user and group policy management
+	\item Develop infrastructure automation using \textbf{Python}, \textbf{Powershell}, and \textbf{Ansible}; automating user provisioning, \textbf{Linux} and \textbf{Windows Server} configuration, and software deployment across 150+ endpoints
 \end{itemize}
 \resumesection{Software Development Engineer}{Amazon (Internship)}{May 2022 - August 2022}
 \begin{itemize}
-    % \item Develop systems that process thousands of labeled binary data points to create high confidence datasets
-    \item Develop internal tooling with \textbf{Python} that integrates with the \textbf{ETL Pipeline}, enabling the Customer Interests team to efficiently aggregate and convert thousands of binary labeling data into high confidence datasets to train and benchmark the performance of their machine learning models and recommendation algorithms, serving more relevant product recommendations to Amazon shoppers
-    % \item Train, analyze, and improve model performance resulting in reduced overhead and minimizing data labeling costs
-    % \item Develop automations to process, transform, and upload labeling data in response to a completed Ground Truth job
-    % \item Parallelized dataset uploads with multithreaded insertions, increasing upload performance and throughput
-    \item Create an \textbf{AWS CDK} application in \textbf{TypeScript} to\ programmatically provision and configure resources, including \textbf{AWS Lambda} functions, \textbf{DynamoDB} databases, and \textbf{IAM} users to distribute read and write permissions
-          % \item Design and implement a \textbf{DynamoDB} database to store and query labeled datasets
-    \item Implement unit and integration tests in \textbf{Pytest} with 100\% branch and statement coverage where applicable
-    \item Configure and deploy the CI/CD infrastructure in TypeScript through AWS CDK and CloudFormation
-          % \item Configure a CI/CD pipeline for automated deployments and provisioned AWS resources using CloudFormation
+	\item Develop \textbf{ETL} tooling with \textbf{Python}, enabling the Customer Interests team to convert binary labeling data into high-confidence ML training data, reducing processing time and supporting recommendation models that map storefront products to various interest categories
+	\item Built \textbf{AWS CDK} infrastructure-as-code application with \textbf{TypeScript} to provision and configure AWS resources including \textbf{AWS Lambda} functions, \textbf{DynamoDB} databases, and \textbf{IAM} roles with granular read/write permissions
+	\item Implement unit and integration tests in \textbf{Pytest} with 100\% branch and statement coverage where applicable
+	\item Design and deploy CI/CD pipeline using \textbf{CloudFormation} with automated testing and deployment for the data processing infrastructure
 \end{itemize}
-% \resumesection{Historian, Website Developer}{Association for Computing Machinery at CSUF}{April 2021 - December 2022}
-% \begin{itemize}
-%   \item Serve as official board member for the largest Computer Science club on campus
-%   \item Develop useful features for blog entries including read time estimates and syntax highlighting on code blocks
-%         % \item Construct informative articles informing students about complex topics not frequently taught in classes
-%   \item Perform thoughtful code review by giving meaningful feedback and inciting discussion on Web Development best practices
-%   \item Mentor budding developers by writing useful documentation and providing helpful pointers
-% \end{itemize}
 \resumesection{Software Engineer}{Hack for LA (Volunteer)}{September 2023 - December 2023}
 \begin{itemize}
-    \item Develop routes and \textbf{React} components for the 311-Data project, a web app that allows users to view and analyze service request data from the City of Los Angeles
-    \item Led the codebase migration to modern \textbf{React} and \textbf{Node} versions, addressing breaking changes and optimizing performance
-    \item Conduct code reviews and provide feedback to team members, ensuring code quality and adherence to best practices
-    \item Develop automations that keep information about projects and contributors on the website up to date
-          % \item Automate the deployment of containers on \textbf{ECS Fargate} along with \textbf{Elastic Load Balancers} and \textbf{IAM} permissions with \textbf{Terraform}
+	\item Develop \textbf{React} components and client-side routes for the 311-Data project, allowing residents to query and visualize 500k+ annual service requests to the City of Los Angeles
+	\item Led codebase migration from React 16 to 18 and Node 12 to 18, resolving breaking changes, refactoring deprecated patterns, and reducing bundle size
 \end{itemize}
-\resumesection{Frontend Developer}{California State University, Fullerton (Volunteer)}{September 2021 - February 2022}
+\resumesection{Frontend Software Developer}{California State University, Fullerton (Volunteer)}{September 2021 - February 2022}
 \begin{itemize}
-    % \item Built mobile responsive frontend using \textbf{React (Next.js)}, primarily the landing page, promoting the event to thousands of students globally, and the dashboard, facilitating team creation and displaying live event announcements
-    \item Spearheaded the creation of a mobile-responsive frontend using \textbf{Next.js} for \textbf{TuffyHacks}, a student-run, MLH-sponsored hackathon, featuring an impactful landing page that reached and engaged a global audience of thousands of students and a dashboard that facilitated team formation and showcased real-time event updates and announcements
-    \item Architected backend infrastructure, leveraging \textbf{AWS Lambda} functions and a \textbf{PostgreSQL} database, enabling participants to effortlessly establish and join teams through personalized invite links, achieving exceptional performance by ensuring 100\% uptime and minimal latency, amidst peak traffic from hundreds of users
-          % \item Design scalable and fault tolerant backend using \textbf{AWS Lambda} functions and a \textbf{PostgreSQL} database, minimizing cloud hosting fees while handling peak traffic from hundreds of users with 100\% uptime and minimal latency during the event
-          % \item Collaborated closely with the design team to establish a consistent design language and deliver a user-centric interface, optimizing the user experience and enhancing overall user experience
-          % \item Designed a PostgreSQL database to replace the Firestore database, allowing us to scale to our 300 user target while reducing our effective hosting costs to \$0
-          % \item Created API endpoints using serverless functions, allowing hackers to create and join teams via invite link
-          % \item Used Next.js, Node.js, PostgreSQL, and Firebase Auth. Hosted on Vercel
+	\item Developed mobile-responsive frontend in Next.js for TuffyHacks, a student-run, MLH-sponsored hackathon, including landing page and team formation dashboard with real-time updates for event announcments and changes to team rosters
+	\item Built backend service using \textbf{AWS Lambda} and \textbf{PostgreSQL}, enabling participants to create teams and exchange invite links
 \end{itemize}
 \section*{Projects}
-% \projectsection{Portfolio Website}{Javascript}{July 2021}
-% \begin{itemize}
-%     \item Developed a website following mobile responsive design practices to showcase some of my work
-%     \item Built from scratch using React on Next.js, ChakraUI, and Framer Motion and deployed on Netlify
-% \end{itemize}
-% \projectsection{Discord Identity Verification Service}{Javascript (React.js, PostgreSQL)}{August 2022}
-% \begin{itemize}
-%     \item Developed a system for students to verify their identity as a CSUF student with their school emails and store member information in a PostgreSQL database
-%     \item Designed a passwordless authentication system that streamlined the process of verifying users
-%     \item Built on a fully serverless architecture, reducing labor to maintain and eliminating hosting fees
-%     \item Currently serves the ACM at CSUF discord server of 1000+ members
-% \end{itemize}
-% \projectsection{SWEify}{Javascript, Python, FastAPI, Scrapy, Next.js, React, TailwindCSS}{}
-% \begin{itemize}
-%     \item Aggregates data from multiple job boards and curates a list of Software Engineering positions for entry level and intern job seekers
-%     \item Develop \textbf{ETL pipeline} using \textbf{Scrapy} and \textbf{BeautifulSoup} scrape and \textbf{Pandas} to transform data from job boards into a \textbf{SQL} database
-%           % \item Automatically parse and extract relevant information like technologies and years of experience and filter out irrelevant listings like non-technical positions and senior roles
-%     \item Display data in a user-friendly frontend with \textbf{React} and \textbf{Tailwind}, allowing users to filter jobs based on location, salary, and more
-% \end{itemize}
-
-\projectsection{Twofivefour}{Svelte, Typescript, TailwindCSS, OpenAI}{}
+\projectsection{Twofivefour}{Svelte, TypeScript, TailwindCSS, OpenAI API}{}
 \begin{itemize}
-    \item An \textbf{AI}-powered coding assistant to help developers understand and document their code by explaining code snippets, translating between programming languages, documenting functions, and calculating time complexity of functions
-          % \item Develop a user-friendly frontend with \textbf{Svelte} and \textbf{Tailwind} that allows users to easily interact with the AI
-          % \item Integrate with the \textbf{OpenAI} LLM APIs to generate code insights and translate between programming languages
-          % \item Establish CI/CD pipeline with \textbf{GitHub Actions} and \textbf{Docker} to automatically deploy the app to a \textbf{Linux} server
+	\item Built AI LLM powered coding assistant leveraging OpenAI API to help developers understand, analyze, and auto-generate documentation for source code; features syntax highlighting, code explanation, and runtime complexity analysis
 \end{itemize}
-
-\projectsection{Spotify Seasonal Playlist Creator}{Javascript, Python, Flask, Spotify REST API, Next.js, Docker Compose, NGINX}{}
+\projectsection{Spotify Seasonal Playlists}{JavaScript, Python, Flask, Spotify REST API, Next.js, Docker, NGINX}{}
 \begin{itemize}
-    \item A web app that places liked songs into playlists grouped by seasons. Currently serving a user base of 20+ individuals
-          % \item Implement a multi-container architecture, utilizing \textbf{Docker Compose} to provision and configure infrastructure, including a \textbf{Flask} backend, \textbf{Next.js} frontend, and \textbf{SQLite} database with admin panel, behind an \textbf{NGINX} reverse proxy with SSL
-          % \item Develop and design the landing page, OAuth login flow, and user dashboard in \textbf{React} and \textbf{Tailwind}
-          % \item Integrate with a \textbf{SQLite} database for error logging and playlist caching, minimizing API calls and monitoring error rates
+	\item Developed full-stack web application integrating Spotify API to automatically categorize and organize user's liked songs into seasonal playlists; built Python Flask backend for playlist generation logic and Next.js frontend for user interaction; actively serving 20+ users
 \end{itemize}
-% \projectsection{Gameboy Emulator}{Rust, SDL2, Z80 Assembly}{}
-% \begin{itemize}
-%     \item Develop a Gameboy emulator using \textbf{Rust}, implementing core functionalities and accurate emulation of the Gameboy hardware.
-%     \item Implemented key components of the Gameboy architecture, including CPU, memory management unit (MMU), graphics processing unit (GPU), and audio processing unit (APU), to provide a comprehensive emulation experience.
-% \end{itemize}
-
-% \projectsection{PositivityPost | Treehacks 2023, CSUF ECS Competition}{Typescript, Svelte, TailwindCSS}{}
-% \begin{itemize}
-%   \item Aggregates news from multiple sources to provide a more balanced and less biased view of the news
-%         % \item Utilize sentiment analysis and language models to group and summarize coverage of newsworthy events
-%   \item Design user-friendly frontend allowing users to quickly filter and tailor their news feed based on topics and sentiments
-% \end{itemize}
-% \projectsection{Pathfinder}{Typescript, Svelte, TailwindCSS}{December 2022}
-% \begin{itemize}
-%     \item Interactive web app that demonstrates and compares the realtime performance of various different pathfinding algorithms, allowing users to see how they work and understand their strengths and limitations.
-%     \item Implement visualizations for Depth-First Search, Breadth-First Search, Dijkstra's Algorithm, and A* Search Algorithm
-%     \item Create fluid CSS animations to better visualize the progression of each algorithm
-% \end{itemize}
-% \projectsection{Spam Email Detection}{Python, Scikit-Learn, Natural Language Toolkit}{}
-% \begin{itemize}
-%     \item Design and implement a \textbf{machine learning} based spam email classifier using \textbf{Python} and \textbf{scikit-learn}
-%     \item Train model on a dataset of labeled emails, achieving a precision of 98\% and a recall of 97\% with the Naive Bayes Classifier
-% \end{itemize}
-
-
-% \resumesection{SQLite Clone}{C++}{June 2019}
-% \begin{itemize}
-%     \item Developed a relational database management system that supports a subset of SQL commands
-%     \item Implemented a B+Tree to index database entries for fast querying
-%     \item Implemented an SQL command parser with syntax error checking
-% \end{itemize}
-
-% \resumesection{Sushi Shop}{Java (Swing, JavaFX)}{May 2017}
-% \begin{itemize}
-%     \item Lead a team to develop a sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order
-%     \item Develop major components of the game engine, specifically the 2D graphics renderer and the physics/collision logic
-% \end{itemize}
-% \newline
-% \section*{Leadership}
-% \resumesection{CSUF Association for Computing Machinery (ACM)}{Historian}{February 2022 - Present}
-% % \resumesection{CSUF Association of Chinese Students}{Treasurer}{May 2021 - May 2022}
-% \resumesection{PCC She.Codes}{Webmaster, Treasurer}{September 2019 - June 2020}
 \section*{Education}
-% \resumesection{California State University, Fullerton}{Computer Science, B.S. \& Minor in Mathematics}{June 2020}
 \resumesection{California State University, Fullerton}{Bachelor of Science in Computer Science, Minor in Mathematics}{}
-% \resumesection{B.S. Computer Science \& Minor in Mathematics}{California State University, Fullerton}{August 2020 - May 2023}
-% \resumesection{A.S. Mathematics}{Pasadena City College}{May 2020}
-% \section*{Coursework}
-% \setlength{\multicolsep}{0pt}
-% \begin{multicols}{2}
-%     \noindent
-%     \begin{itemize}
-%         \item Operating Systems
-%         \item Software Engineering
-%         \item File Structures \& Database Systems
-%         \item Data Structures \& Algorithms
-%         \item Compilers \& Languages
-%         \item Computer Security
-%     \end{itemize}
-% \end{multicols}
-% \newline
 \section*{Skills}
-\textbf{Languages}: JavaScript/TypeScript, HTML/CSS, Python, C++, Rust, Go, Java, {\fontfamily{lmr}\selectfont\LaTeX}, Dart, SQL, R, MATLAB\\
-\textbf{Web}: React, Next.js, Svelte, Figma, TailwindCSS, Express.js, Flask, FastAPI, Node.js, PostgreSQL, SQLite, MySQL, IBM DB2, IBM AIX\\
-% \textbf{Data Analysis/Machine Learning}: Jupyter Notebook, Scikit-Learn, Numpy, Pandas, Pytorch, Keras\\
-\textbf{DevOps}: Amazon Web Services, Microsoft Azure, VMware ESXi, Ansible, Firebase, Docker, NGINX, Apache, Terraform\\
-\textbf{Certifications}: AHA First Aid CPR AED, CCNA 200-301 (WIP)\\
-
-% \textbf{Mobile}: React Native, Flutter\\
+\textbf{Programming Languages}: JavaScript/TypeScript, HTML/CSS, Python, Powershell, Rust, Go, Java, {\fontfamily{lmr}\selectfont\LaTeX}, SQL\\
+% \textbf{Web}: React, Next.js, TailwindCSS, Flask, FastAPI, Node.js, PostgreSQL, SQLite, MySQL, IBM DB2, IBM AIX\\
+% \textbf{Cloud and Operations}: AWS, Microsoft Azure, VMware ESXi, Ansible, Docker, NGINX, Apache\\
+\textbf{Networking}: Cisco ASA, Cisco switches, Cisco Meraki, FortiNAC, Versa SD-WAN, TCP/IP, VPN, ACLs, DNS, DHCP\\
+\textbf{Technical Competencies}: High-availabity design, Disaster Recovery (DR), SAN Replication, backup/recovery strategy\\
+\textbf{Certifications}: AHA First Aid CPR AED, CCNA 200-301 (In-Progress)\\
 \end{document}
