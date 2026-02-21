@@ -2,7 +2,6 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
-\usepackage{fontspec}
 \usepackage[margin = 0.5in]{geometry}
 \usepackage{hyperref}
 \usepackage{multicol}
@@ -48,10 +47,7 @@
 \newcommand{\resumesection}[3]{
     \subsection*{#1}
     \ 
-    % \small
-    % \textcolor{grey}{\emph{#2}}
     \normalsize
-    % \textcolor{black}{\emph{#2}}
     \normalsize
     \hfill
     \textcolor{black}{#3}
@@ -64,11 +60,8 @@
 \newcommand{\projectsection}[3]{
     \subsection*{#1}
     \ 
-    % \small
-    % \textcolor{grey}{\emph{#2}}
     \small
     \textcolor{grey}{\emph{#2}}
-    % \textcolor{black}{\emph{#2}}
     \normalsize
     \hfill
     \textcolor{black}{#3}
@@ -83,7 +76,7 @@
     \chead{
         \huge{\textbf{\textcolor{csufblue}{\first{} \last{}}}}\\
         \small{\textcolor{grey}{
-            \faGithub \ \github{}  |  \faLinkedin \ \linkedin{}}  |  \faGlobe \ \website{} |  \faEnvelope \ \email{}
+            \faGithub \ \github{}  $|$   \faLinkedin \ \linkedin{}}  $|$  \faGlobe \ \website{} $|$  \faEnvelope \ \email{}
         }
     }
 }
@@ -94,10 +87,10 @@
 \begin{itemize}
 	\item Manage operation and configuration of a \textbf{Corelation Keystone} financial core system; develop automations in \textbf{Python} and \textbf{Java} to handle batch transaction postings and routine processing/purge workflows
 	\item Develop \textbf{SQL} reports and dashboards in \textbf{Jaspersoft} to provide insights on member activity, loan performance, and operational metrics
-	\item Design and develop card transaction alerts platform in \textbf{Python} and \textbf{Twilio}, enabling members to receive real-time SMS/email notifications on card activity; system processes 10,000+ daily transactions with <2 second latency
+	\item Design and develop card transaction alerts platform in \textbf{Python} and \textbf{Twilio}, enabling members to receive real-time SMS/email notifications on card activity; system processes 10,000+ daily transactions with \textless 2 second latency
 	      % \item Serve as technical lead on loan preapproval campaign, coordinating with credit bureaus, lending, and marketing departments to identify candidates and generate and offer personalized loan offers to members
 	      % \item Manage critical IT infrastructure components including \textbf{Cisco} firewall/VPN administration, site-to-site connectivity across multiple branch locations and data centers, and \textbf{SAN} replication for disaster recovery and business continuity
-	\item Manage and configure \textbf{Cisco ASA} firewalls, site-to-site VPN tunnels, firewall rulesets, ACLs, \textbf{SAN} replication, and procedures for disaster recovery and business continuity
+	\item Manage and configure \textbf{Cisco ASA} firewalls/switches, site-to-site VPN tunnels, firewall rulesets, ACLs, \textbf{SAN} replication, and procedures for disaster recovery and business continuity
 	\item Perform network troubleshooting and diagnostics using tools such as tcpdump, traceroute, and netstat; maintain network documentation and monitor site-to-site VPN connectivity and SAN replication latency to maintain RTO/RPO targets
 	\item Administer and maintain \textbf{Active Directory} and \textbf{Microsoft Entra} environments, including user and group policy management
 	\item Develop infrastructure automation using \textbf{Python}, \textbf{Powershell}, and \textbf{Ansible}; automating user provisioning, \textbf{Linux} and \textbf{Windows Server} configuration, and software deployment across 150+ endpoints
@@ -116,7 +109,7 @@
 \end{itemize}
 \resumesection{Frontend Software Developer}{California State University, Fullerton (Volunteer)}{September 2021 - February 2022}
 \begin{itemize}
-	\item Developed mobile-responsive frontend in Next.js for TuffyHacks, a student-run, MLH-sponsored hackathon, including landing page and team formation dashboard with real-time updates for event announcments and changes to team rosters
+	\item Developed mobile-responsive frontend in \textbf{Next.js} for TuffyHacks, a student-run, MLH-sponsored hackathon, including landing page and team formation dashboard with real-time updates for event announcments and changes to team rosters
 	\item Built backend service using \textbf{AWS Lambda} and \textbf{PostgreSQL}, enabling participants to create teams and exchange invite links
 \end{itemize}
 \section*{Projects}
