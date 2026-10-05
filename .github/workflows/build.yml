@@ -34,6 +34,6 @@ jobs:
           destination_repo: "jaasonw/jason-wong.me"
           destination_folder: "public"
           destination_branch: "master"
-          user_email: "noreply@github.com"
-          user_name: "github-action"
+          user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          user_name: "github-actions[bot]"
           commit_message: "Update resume.pdf"
