@@ -85,49 +85,48 @@
 \section*{Experience}
 \resumesection{IT Helpdesk Technician}{F\&A Credit Union}{December 2023 - Present}
 \begin{itemize}
-	\item Manage operation and configuration of a \textbf{Corelation Keystone} financial core system; develop automations in \textbf{Python} and \textbf{Java} to handle batch transaction postings and routine processing/purge workflows
-	\item Develop \textbf{SQL} reports and dashboards in \textbf{Jaspersoft} to provide insights on member activity, loan performance, and operational metrics
-	\item Design and develop card transaction alerts platform in \textbf{Python} and \textbf{Twilio}, enabling members to receive real-time SMS/email notifications on card activity; system processes 10,000+ daily transactions with \textless 2 second latency
+	\item Manage \textbf{Corelation Keystone} financial core system; automate batch transaction postings and purge workflows in \textbf{Python} and \textbf{Java}; build \textbf{SQL} reports and dashboards in \textbf{Jaspersoft}
+	\item Manage and configure \textbf{Cisco} firewalls and rulesets, switches, ACLs, and site-to-site VPN tunnels linking multiple branches and data centers; troubleshoot network issues; monitor VPN connectivity and \textbf{SAN} replication latency to meet RTO/RPO targets and maintain disaster recovery procedures
+	\item Administer \textbf{Active Directory} and \textbf{Microsoft Entra}, including group policy and scripted account onboarding and offboarding; prepare \textbf{Microsoft 365 Copilot} rollout by assigning licenses and auditing SharePoint/OneDrive permissions
+	\item Manage endpoint patching with \textbf{NinjaOne}; automate \textbf{Linux} and \textbf{Windows Server} configuration and software deployment across 150+ endpoints with \textbf{Python}, \textbf{Powershell}, and \textbf{Ansible}
+	\item Run vulnerability management with \textbf{Tenable} and respond to incidents escalated by the SOC; support \textbf{NCUA} exams, external audits, and penetration tests by gathering evidence, writing reports, and remediating findings
+	\item Resolve \textbf{SysAid} helpdesk tickets for staff across branches, covering hardware, software, and account issues
+	\item Build card transaction alerts platform in \textbf{Python} and \textbf{Twilio} that sends members real-time SMS/email alerts on card activity; system processes 10,000+ daily transactions with \textless 2 second latency
 	      % \item Serve as technical lead on loan preapproval campaign, coordinating with credit bureaus, lending, and marketing departments to identify candidates and generate and offer personalized loan offers to members
 	      % \item Manage critical IT infrastructure components including \textbf{Cisco} firewall/VPN administration, site-to-site connectivity across multiple branch locations and data centers, and \textbf{SAN} replication for disaster recovery and business continuity
-	\item Manage and configure \textbf{Cisco} firewalls, switches, site-to-site VPN tunnels, firewall rulesets, ACLs, \textbf{SAN} replication, and procedures for disaster recovery and business continuity
-	\item Perform network troubleshooting and diagnostics using tools such as tcpdump, traceroute, and netstat; maintain network documentation and monitor site-to-site VPN connectivity and SAN replication latency to maintain RTO/RPO targets
-	\item Administer and maintain \textbf{Active Directory} and \textbf{Microsoft Entra} environments, including user and group policy management
-	\item Develop infrastructure automation using \textbf{Python}, \textbf{Powershell}, and \textbf{Ansible}; automating user provisioning, \textbf{Linux} and \textbf{Windows Server} configuration, and software deployment across 150+ endpoints
 \end{itemize}
 \resumesection{Software Development Engineer}{Amazon (Internship)}{May 2022 - August 2022}
 \begin{itemize}
-	\item Develop \textbf{ETL} tooling with \textbf{Python}, enabling the Customer Interests team to convert binary labeling data into high-confidence ML training data, reducing processing time and supporting recommendation models that map storefront products to various interest categories
-	\item Built \textbf{AWS CDK} infrastructure-as-code application with \textbf{TypeScript} to provision and configure AWS resources including \textbf{AWS Lambda} functions, \textbf{DynamoDB} databases, and \textbf{IAM} roles with granular read/write permissions
-	\item Implement unit and integration tests in \textbf{Pytest} with 100\% branch and statement coverage where applicable
-	\item Design and deploy CI/CD pipeline using \textbf{CloudFormation} with automated testing and deployment for the data processing infrastructure
+	\item Build \textbf{AWS CDK} infrastructure-as-code in \textbf{TypeScript} to provision \textbf{AWS Lambda} functions, \textbf{DynamoDB} tables, and least-privilege \textbf{IAM} roles for a data processing service
+	\item Build CI/CD pipeline with \textbf{CloudFormation} for automated testing and deployment, backed by \textbf{Pytest} unit and integration tests targeting 100\% branch coverage
+	\item Develop \textbf{Python} \textbf{ETL} service that attaches to the Customer Interests team's data pipeline and builds a high-confidence golden dataset from each new batch of Mechanical Turk labels, used to train models mapping storefront products to interest categories
 \end{itemize}
 \resumesection{Software Engineer}{Hack for LA (Volunteer)}{September 2023 - December 2023}
 \begin{itemize}
 	\item Develop \textbf{React} components and client-side routes for the 311-Data project, allowing residents to query and visualize 500k+ annual service requests to the City of Los Angeles
-	\item Led codebase migration from React 16 to 18 and Node 12 to 18, resolving breaking changes, refactoring deprecated patterns, and reducing bundle size
+	\item Lead codebase migration from React 16 to 18 and Node 12 to 18, resolving breaking changes, refactoring deprecated patterns, and reducing bundle size
 \end{itemize}
 \resumesection{Frontend Software Developer}{California State University, Fullerton (Volunteer)}{September 2021 - February 2022}
 \begin{itemize}
-	\item Developed mobile-responsive frontend in \textbf{Next.js} for TuffyHacks, a student-run, MLH-sponsored hackathon, including landing page and team formation dashboard with real-time updates for event announcments and changes to team rosters
-	\item Built backend service using \textbf{AWS Lambda} and \textbf{PostgreSQL}, enabling participants to create teams and exchange invite links
+	\item Build \textbf{Next.js} frontend and \textbf{AWS Lambda}/\textbf{PostgreSQL} backend for TuffyHacks, an MLH-sponsored hackathon, enabling participants to form teams and exchange invite links
 \end{itemize}
 \section*{Projects}
-\projectsection{Twofivefour}{Svelte, TypeScript, TailwindCSS, OpenAI API}{}
+\projectsection{Homelab}{Proxmox, AdGuard Home, Tailscale, WireGuard}{}
 \begin{itemize}
-	\item Built AI LLM powered coding assistant leveraging OpenAI API to help developers understand, analyze, and auto-generate documentation for source code; features syntax highlighting, code explanation, and runtime complexity analysis
+	\item Run a \textbf{Proxmox} host on a network split into VLANs and subnets, with \textbf{AdGuard Home} handling DNS filtering
+	\item Self-host shared drives and other services, reachable remotely over \textbf{Tailscale}, replacing an earlier self-managed \textbf{WireGuard} VPN
 \end{itemize}
 \projectsection{Spotify Seasonal Playlists}{JavaScript, Python, Flask, Spotify REST API, Next.js, Docker, NGINX}{}
 \begin{itemize}
-	\item Developed full-stack web application integrating Spotify API to automatically categorize and organize user's liked songs into seasonal playlists; built Python Flask backend for playlist generation logic and Next.js frontend for user interaction; actively serving 20+ users
+	\item Build a Flask/Next.js app that sorts users' liked songs into seasonal playlists, deployed with Docker behind NGINX; serving 20+ users
 \end{itemize}
 \section*{Education}
 \resumesection{California State University, Fullerton}{Bachelor of Science in Computer Science, Minor in Mathematics}{}
 \section*{Skills}
-\textbf{Programming Languages}: JavaScript/TypeScript, HTML/CSS, Python, Powershell, Rust, Go, Java, {\fontfamily{lmr}\selectfont\LaTeX}, SQL\\
+\textbf{Programming Languages}: JavaScript/TypeScript, Python, Powershell, Rust, Java, {\fontfamily{lmr}\selectfont\LaTeX}, SQL\\
 % \textbf{Web}: React, Next.js, TailwindCSS, Flask, FastAPI, Node.js, PostgreSQL, SQLite, MySQL, IBM DB2, IBM AIX\\
-% \textbf{Cloud and Operations}: AWS, Microsoft Azure, VMware ESXi, Ansible, Docker, NGINX, Apache\\
+\textbf{Systems}: Corelation Keystone, Windows Server, Linux (Debian, Ubuntu, Red Hat), Active Directory, Microsoft Entra, Group Policy\\
+\textbf{Cloud and Operations}: AWS, Microsoft Azure, VMware ESXi, Proxmox, NinjaOne, Tenable, SysAid, Ansible, Docker, NGINX, Apache\\
 \textbf{Networking}: Cisco ASA, Cisco switches, Cisco Meraki, FortiNAC, Versa SD-WAN, TCP/IP, VPN, ACLs, DNS, DHCP\\
-\textbf{Technical Competencies}: High-availabity design, Disaster Recovery (DR), SAN Replication, backup/recovery strategy\\
 \textbf{Certifications}: AHA First Aid CPR AED, CCNA 200-301 (In-Progress)\\
 \end{document}
